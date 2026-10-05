@@ -1,0 +1,1713 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Seguimiento del plan de estudio CFA Level I para el examen de agosto 2027.">
+<title>Plan Maestro CFA Level I — Agosto 2027</title>
+</head>
+<body>
+<style>
+/* ───────────────────────── tokens ───────────────────────── */
+:root{
+  --paper:#EAF1F9;
+  --card:#FFFFFF;
+  --card-2:#FFFFFF;
+  --ink:#152A3D;
+  --ink-soft:#4A6178;
+  --ink-faint:#8298AC;
+  --line:#C9D9E8;
+  --line-soft:#DCE8F2;
+  --accent:#1B4F91;
+  --accent-ink:#1B4F91;
+  --accent-soft:#D7E6F5;
+  --celeste:#2E8FC0;
+  --celeste-ink:#1E6E97;
+  --celeste-bg:#DCEEF7;
+  --celeste-line:#AED4EA;
+  --gold:#A67C1E;
+  --gold-bg:#F6E8B8;
+  --gold-line:#E3C878;
+  --green:#237049;
+  --green-bg:#D7EFE0;
+  --green-line:#A9D9BE;
+  --red:#9E2C20;
+  --red-bg:#F2D9D5;
+  --amber:#B36A16;
+  --on-green:#FFFFFF;
+  --on-gold:#FFFFFF;
+  --shadow:0 1px 2px rgba(21,36,48,.06), 0 8px 24px -16px rgba(21,36,48,.28);
+  --radius:6px;
+  --f-display:"Palatino Linotype","Iowan Old Style",Palatino,"Book Antiqua",Georgia,serif;
+  --f-ui:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --f-mono:Consolas,"Cascadia Mono","SFMono-Regular",Menlo,ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#0B1420; --card:#111E2C; --card-2:#16283A;
+    --ink:#E4EDF5; --ink-soft:#9DB3C7; --ink-faint:#6E859C;
+    --line:#243B52; --line-soft:#1B2E42;
+    --accent:#5B9BE0; --accent-ink:#7FB6EE; --accent-soft:#152A40;
+    --celeste:#6FC3E8; --celeste-ink:#8ED4F0; --celeste-bg:#123244; --celeste-line:#1F4E63;
+    --gold:#E3C066; --gold-bg:#3A2E10; --gold-line:#6B5320;
+    --green:#69C79A; --green-bg:#123024; --green-line:#265C43;
+    --red:#E4796A; --red-bg:#3A1A16; --amber:#DFA354;
+    --on-green:#0B1420; --on-gold:#241A05;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0B1420; --card:#111E2C; --card-2:#16283A;
+  --ink:#E4EDF5; --ink-soft:#9DB3C7; --ink-faint:#6E859C;
+  --line:#243B52; --line-soft:#1B2E42;
+  --accent:#5B9BE0; --accent-ink:#7FB6EE; --accent-soft:#152A40;
+  --celeste:#6FC3E8; --celeste-ink:#8ED4F0; --celeste-bg:#123244; --celeste-line:#1F4E63;
+  --gold:#E3C066; --gold-bg:#3A2E10; --gold-line:#6B5320;
+  --green:#69C79A; --green-bg:#123024; --green-line:#265C43;
+  --red:#E4796A; --red-bg:#3A1A16; --amber:#DFA354;
+  --on-green:#0B1420; --on-gold:#241A05;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+}
+:root[data-theme="light"]{
+  --paper:#EAF1F9; --card:#FFFFFF; --card-2:#FFFFFF;
+  --ink:#152A3D; --ink-soft:#4A6178; --ink-faint:#8298AC;
+  --line:#C9D9E8; --line-soft:#DCE8F2;
+  --accent:#1B4F91; --accent-ink:#1B4F91; --accent-soft:#D7E6F5;
+  --celeste:#2E8FC0; --celeste-ink:#1E6E97; --celeste-bg:#DCEEF7; --celeste-line:#AED4EA;
+  --gold:#A67C1E; --gold-bg:#F6E8B8; --gold-line:#E3C878;
+  --green:#237049; --green-bg:#D7EFE0; --green-line:#A9D9BE;
+  --red:#9E2C20; --red-bg:#F2D9D5; --amber:#B36A16;
+  --on-green:#FFFFFF; --on-gold:#FFFFFF;
+  --shadow:0 1px 2px rgba(21,36,48,.06), 0 8px 24px -16px rgba(21,36,48,.28);
+}
+
+/* ───────────────────────── inicio de sesión ───────────────────────── */
+#page{display:none}
+.auth-screen{
+  min-height:100vh; display:flex; align-items:center; justify-content:center;
+  padding:24px; background:var(--paper);
+}
+.auth-box{
+  background:var(--card-2); border:1px solid var(--line); border-radius:10px;
+  padding:32px 28px; max-width:360px; width:100%; box-shadow:var(--shadow);
+}
+.auth-box .eyebrow{text-align:center}
+.auth-box h1{
+  font-family:var(--f-display); font-weight:400; font-size:1.5rem;
+  text-align:center; margin:6px 0 22px; color:var(--ink);
+}
+.auth-box label{
+  display:block; font-size:10.5px; text-transform:uppercase; letter-spacing:.08em;
+  color:var(--ink-faint); font-weight:600; margin:14px 0 5px;
+}
+.auth-box label:first-of-type{margin-top:0}
+.auth-box input{
+  width:100%; background:var(--paper); border:1px solid var(--line); border-radius:6px;
+  padding:9px 11px; font-size:0.92rem; color:var(--ink);
+}
+.auth-box input:focus{outline:2px solid var(--accent); outline-offset:1px; border-color:transparent}
+.auth-error{color:var(--red); font-size:0.8rem; margin:12px 0 0; line-height:1.4}
+.auth-forgot{text-align:right; margin:8px 0 0}
+.auth-forgot a{font-size:0.76rem; color:var(--celeste-ink); text-decoration:underline; text-underline-offset:2px; cursor:pointer}
+#authSubmitBtn{width:100%; margin-top:18px; justify-content:center}
+.auth-switch{text-align:center; margin:18px 0 0; font-size:0.82rem; color:var(--ink-soft)}
+.auth-loading{text-align:center; color:var(--ink-faint); font-size:0.85rem; margin-top:14px}
+.account-note strong{color:var(--ink); font-weight:600}
+
+/* ───────────────────────── base ───────────────────────── */
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--f-ui); font-size:15px; line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1320px; margin:0 auto; padding:28px 22px 64px; display:flex; flex-direction:column; gap:20px}
+.mono{font-family:var(--f-mono); font-variant-numeric:tabular-nums}
+.eyebrow{
+  font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink-faint); font-weight:600;
+}
+button{font-family:inherit; font-size:inherit; color:inherit; cursor:pointer}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:3px}
+
+.panel{
+  background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+/* ───────────────────────── masthead ───────────────────────── */
+.mast{display:flex; flex-wrap:wrap; align-items:flex-end; gap:20px 32px; padding:22px 24px}
+.mast-id{flex:1 1 320px; min-width:260px}
+.mast h1{
+  font-family:var(--f-display); font-weight:400; font-size:clamp(27px,3.4vw,38px);
+  margin:4px 0 2px; letter-spacing:-.01em; text-wrap:balance; line-height:1.12;
+}
+.mast h1 em{font-style:normal; color:var(--accent-ink)}
+.mast-sub{color:var(--ink-soft); font-size:13.5px}
+.mast-stats{display:flex; gap:26px; flex-wrap:wrap}
+.stat{display:flex; flex-direction:column; gap:2px}
+.stat-n{font-family:var(--f-mono); font-variant-numeric:tabular-nums; font-size:26px; line-height:1; font-weight:600}
+.stat-n.gold{color:var(--gold)}
+.stat-n.accent{color:var(--accent-ink)}
+.stat-l{font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); font-weight:600}
+
+/* total meter */
+.meter-block{padding:0 24px 22px; display:flex; flex-direction:column; gap:9px}
+.meter-top{display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap}
+.meter-pct{font-family:var(--f-mono); font-variant-numeric:tabular-nums; font-size:34px; font-weight:700; line-height:1}
+.meter-note{font-size:12.5px; color:var(--ink-soft)}
+.meter-rail{
+  position:relative; height:12px; border-radius:2px; overflow:hidden;
+  background:var(--line-soft); border:1px solid var(--line);
+}
+.meter-fill{
+  height:100%; width:0%; background:var(--accent);
+  transition:width .4s cubic-bezier(.4,0,.2,1);
+}
+.meter-fill.full{background:linear-gradient(90deg,var(--gold),var(--gold-line),var(--gold))}
+.meter-ticks{display:flex; justify-content:space-between; font-size:10px; color:var(--ink-faint)}
+
+/* ───────────────────────── top band: calendar + chart ───────────────────────── */
+.band{display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:20px}
+@media (max-width:940px){ .band{grid-template-columns:1fr} }
+
+.sec-head{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:14px 18px; border-bottom:1px solid var(--line-soft);
+}
+.sec-head h2{
+  font-family:var(--f-display); font-weight:400; font-size:19px; margin:0; letter-spacing:-.005em;
+}
+.sec-body{padding:16px 18px}
+
+/* calendar */
+.cal-nav{display:flex; align-items:center; gap:4px}
+.cal-nav button{
+  background:var(--card-2); border:1px solid var(--line); border-radius:4px;
+  width:28px; height:26px; display:grid; place-items:center; line-height:1; color:var(--ink-soft);
+}
+.cal-nav button:hover:not(:disabled){border-color:var(--accent); color:var(--accent-ink)}
+.cal-nav button:disabled{opacity:.35; cursor:default}
+.cal-nav .today-btn{width:auto; padding:0 10px; font-size:11.5px; letter-spacing:.04em}
+.cal-month{
+  font-family:var(--f-display); font-size:17px; min-width:150px; text-align:center;
+  text-transform:capitalize;
+}
+.cal-grid{display:grid; grid-template-columns:repeat(7,1fr); gap:2px; max-width:420px; margin-inline:auto}
+@media (max-width:940px){ .cal-grid{max-width:560px} }
+.cal-dow{
+  text-align:center; font-size:9px; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--ink-faint); font-weight:600; padding-bottom:3px;
+}
+.cal-d{
+  position:relative; aspect-ratio:1/.72; min-height:25px;
+  border:1px solid var(--line-soft); border-radius:3px; background:var(--card-2);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px;
+  font-family:var(--f-mono); font-variant-numeric:tabular-nums; font-size:11px;
+  color:var(--ink); cursor:default;
+}
+.cal-d.is-out{opacity:.3; background:transparent; border-color:transparent}
+.cal-d.is-goal{background:var(--green-bg); border-color:var(--green-line); color:var(--green); font-weight:600}
+.cal-d.is-goal-done{background:var(--green); border-color:var(--green); color:var(--on-green); font-weight:700}
+.cal-d.is-goal-late{background:var(--red-bg); border-color:var(--red); color:var(--red); font-weight:700}
+.cal-d.is-gold{background:var(--gold-bg); border-color:var(--gold-line); color:var(--gold); font-weight:700}
+.cal-d.is-exam{
+  background:var(--gold); border-color:var(--gold);
+  color:var(--on-gold); font-weight:700;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.22);
+}
+.cal-d.is-today{box-shadow:0 0 0 2px var(--accent); z-index:1}
+.cal-marks{display:flex; gap:2px; height:4px; align-items:center}
+.cal-dot{width:3px; height:3px; border-radius:50%}
+.cal-dot.g{background:var(--green)}
+.cal-dot.m{background:var(--amber)}
+.cal-dot.a{background:var(--gold)}
+.cal-d.is-exam .cal-dot.g, .cal-d.is-goal-done .cal-dot.g{background:currentColor}
+
+.legend{display:flex; flex-wrap:wrap; gap:4px 12px; margin-top:11px; font-size:10.5px; color:var(--ink-soft)}
+.legend span{display:inline-flex; align-items:center; gap:5px}
+.sw{width:9px; height:9px; border-radius:2px; border:1px solid var(--line); flex:none}
+.sw.goal{background:var(--green-bg); border-color:var(--green-line)}
+.sw.done{background:var(--green); border-color:var(--green)}
+.sw.late{background:var(--red-bg); border-color:var(--red)}
+.sw.gold{background:var(--gold-bg); border-color:var(--gold-line)}
+.sw.exam{background:var(--gold); border-color:var(--gold)}
+.sw.today{background:transparent; box-shadow:0 0 0 2px var(--accent) inset; border-color:transparent}
+
+/* quote */
+.quote{
+  margin:16px 0 0; padding:14px 16px 14px 18px;
+  border-left:2px solid var(--gold); background:var(--card-2);
+  border-radius:0 4px 4px 0;
+}
+.quote p{
+  margin:0; font-family:var(--f-display); font-size:16.5px; line-height:1.4;
+  font-style:italic; text-wrap:balance;
+}
+.quote footer{margin-top:6px; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); font-weight:600}
+
+/* chart */
+.chart-wrap{display:flex; flex-direction:column; gap:10px}
+.chart{
+  display:flex; align-items:flex-end; gap:4px; height:110px;
+  border-bottom:1px solid var(--line); padding-bottom:0; position:relative;
+}
+.chart::before{
+  content:""; position:absolute; left:0; right:0; top:0;
+  border-top:1px dashed var(--line); opacity:.7;
+}
+.bar-col{flex:1 1 0; display:flex; flex-direction:column; justify-content:flex-end; align-items:center; gap:3px; height:100%; min-width:0}
+.bar-v{font-family:var(--f-mono); font-size:10px; color:var(--ink-faint); line-height:1}
+.bar{
+  width:100%; max-width:26px; background:var(--accent); border-radius:2px 2px 0 0;
+  min-height:2px; transition:height .35s cubic-bezier(.4,0,.2,1);
+}
+.bar.zero{background:var(--line); min-height:2px}
+.bar.today{background:var(--gold)}
+.bar.best{background:var(--green)}
+.chart-x{display:flex; gap:4px}
+.x-lab{
+  flex:1 1 0; text-align:center; font-family:var(--f-mono); font-size:9.5px;
+  color:var(--ink-faint); min-width:0; overflow:hidden;
+}
+.x-lab.today{color:var(--gold); font-weight:700}
+.chart-legend{display:flex; justify-content:space-between; gap:12px; font-size:11.5px; color:var(--ink-soft); flex-wrap:wrap}
+.chart-legend b{font-family:var(--f-mono); color:var(--ink); font-weight:700}
+.pace{
+  margin-top:2px; padding:10px 12px; border-radius:4px; font-size:12.5px;
+  background:var(--card-2); border:1px solid var(--line-soft); display:flex; gap:8px; align-items:baseline;
+}
+.pace .tag{font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; flex:none}
+.pace.ok .tag{color:var(--green)}
+.pace.warn .tag{color:var(--amber)}
+.pace.late .tag{color:var(--red)}
+
+/* ───────────────────────── main grid ───────────────────────── */
+.main{display:grid; grid-template-columns:minmax(0,1.55fr) minmax(0,1fr); gap:20px; align-items:start}
+@media (max-width:1040px){ .main{grid-template-columns:1fr} }
+.rail{display:flex; flex-direction:column; gap:20px; position:sticky; top:18px}
+@media (max-width:1040px){ .rail{position:static} }
+
+/* ───────────────────────── checklist ───────────────────────── */
+.topics{display:flex; flex-direction:column}
+.topic{border-bottom:1px solid var(--line-soft)}
+.topic:last-child{border-bottom:0}
+.topic-head{
+  list-style:none; cursor:pointer; padding:13px 18px;
+  display:grid; grid-template-columns:14px 1fr auto; gap:12px; align-items:center;
+}
+.topic-head::-webkit-details-marker{display:none}
+.topic-head:hover{background:var(--card-2)}
+.tw{color:var(--ink-faint); font-size:11px; transition:transform .18s ease; line-height:1}
+.topic[open] > .topic-head .tw{transform:rotate(90deg)}
+.t-main{min-width:0; display:flex; flex-direction:column; gap:5px}
+.t-name{display:flex; align-items:baseline; gap:9px; flex-wrap:wrap}
+.t-name strong{font-weight:600; font-size:14.5px; letter-spacing:-.005em}
+.t-weight{
+  font-family:var(--f-mono); font-size:10.5px; color:var(--celeste-ink);
+  background:var(--celeste-bg); padding:1px 6px; border-radius:3px; flex:none;
+}
+.t-range{font-family:var(--f-mono); font-size:11px; color:var(--ink-faint)}
+.t-rail{height:4px; border-radius:2px; background:var(--line-soft); overflow:hidden; max-width:100%}
+.t-fill{height:100%; width:0; background:var(--accent); transition:width .35s ease}
+.topic.done .t-fill{background:var(--green)}
+.t-meta{text-align:right; display:flex; flex-direction:column; gap:1px; flex:none}
+.t-count{font-family:var(--f-mono); font-variant-numeric:tabular-nums; font-size:13px; font-weight:600}
+.topic.done .t-count{color:var(--green)}
+.t-pct{font-family:var(--f-mono); font-size:10.5px; color:var(--ink-faint)}
+
+.topic-body{padding:2px 18px 16px 44px; display:flex; flex-direction:column; gap:12px}
+.week{border-left:2px solid var(--line); padding-left:14px}
+.week.done{border-left-color:var(--green)}
+.week-head{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:6px}
+.week-label{font-size:11px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:var(--ink-soft)}
+.week.done .week-label{color:var(--green)}
+.week-dates{font-family:var(--f-mono); font-size:11px; color:var(--ink-faint)}
+.week-count{font-family:var(--f-mono); font-size:11px; color:var(--ink-faint); margin-left:auto}
+.week-all{
+  background:transparent; border:1px solid var(--line); border-radius:3px;
+  font-size:10.5px; padding:1px 7px; color:var(--ink-soft); letter-spacing:.03em;
+}
+.week-all:hover{border-color:var(--accent); color:var(--accent-ink)}
+
+.lms{list-style:none; margin:0; padding:0; display:flex; flex-direction:column}
+.lm{border-radius:4px}
+.lm-row{
+  display:grid; grid-template-columns:auto minmax(0,1fr) auto auto auto; gap:10px;
+  align-items:baseline; padding:5px 6px 5px 4px; border-radius:4px;
+}
+.lm-row:hover{background:var(--card-2)}
+.lm-lab{
+  display:grid; grid-template-columns:38px minmax(0,1fr); gap:10px; align-items:baseline;
+  min-width:0; cursor:pointer;
+}
+.lm-row input, .sec input{
+  appearance:none; -webkit-appearance:none; margin:0; flex:none;
+  border:1.5px solid var(--line); border-radius:3px; background:var(--card-2);
+  position:relative; cursor:pointer; transition:background .15s, border-color .15s;
+}
+.lm-row input{width:15px; height:15px; top:2px}
+.lm-row input:hover, .sec input:hover{border-color:var(--accent)}
+.lm-row input:checked, .sec input:checked{background:var(--green); border-color:var(--green)}
+.lm-row input:checked::after{
+  content:""; position:absolute; left:4.2px; top:1px; width:4px; height:8px;
+  border:solid var(--on-green); border-width:0 2px 2px 0; transform:rotate(42deg);
+}
+.lm-row input:indeterminate{background:var(--amber); border-color:var(--amber)}
+.lm-row input:indeterminate::after{
+  content:""; position:absolute; left:2.5px; top:5.4px; width:7px; height:0;
+  border-top:2px solid var(--on-gold);
+}
+.lm-code{font-family:var(--f-mono); font-size:11px; color:var(--ink-faint)}
+.lm-title{font-size:13.5px; line-height:1.35}
+.lm-when{font-family:var(--f-mono); font-size:10.5px; color:var(--green); opacity:0; white-space:nowrap}
+.lm.on .lm-when{opacity:1}
+.lm.on .lm-title{color:var(--ink-faint); text-decoration:line-through; text-decoration-color:var(--green-line)}
+.lm.on .lm-code{color:var(--green)}
+.lm-frac{font-family:var(--f-mono); font-size:10.5px; color:var(--ink-faint); white-space:nowrap}
+.lm-frac.part{color:var(--amber); font-weight:700}
+.lm.on .lm-frac{color:var(--green)}
+.lm-exp{
+  background:transparent; border:0; padding:0 2px; line-height:1;
+  color:var(--ink-faint); font-size:9px; transition:transform .18s ease;
+}
+.lm-exp:hover{color:var(--accent-ink)}
+.lm-exp[aria-expanded="true"]{transform:rotate(180deg)}
+
+.secs{
+  list-style:none; margin:1px 0 7px 11px; padding:0 0 0 22px;
+  display:flex; flex-direction:column; border-left:1px solid var(--line-soft);
+}
+.secs[hidden]{display:none}
+.sec label{
+  display:grid; grid-template-columns:auto minmax(0,1fr); gap:9px; align-items:baseline;
+  padding:3px 6px; border-radius:3px; cursor:pointer;
+}
+.sec label:hover{background:var(--card-2)}
+.sec input{width:12px; height:12px; top:2px}
+.sec input:checked::after{
+  content:""; position:absolute; left:3.2px; top:.5px; width:3.5px; height:6.5px;
+  border:solid var(--on-green); border-width:0 2px 2px 0; transform:rotate(42deg);
+}
+.sec-t{font-size:12px; line-height:1.35; color:var(--ink-soft)}
+.sec.on .sec-t{color:var(--ink-faint); text-decoration:line-through; text-decoration-color:var(--green-line)}
+
+/* ───────────────────────── dates table ───────────────────────── */
+.tbl-scroll{overflow-x:auto}
+table.dates{width:100%; border-collapse:collapse; font-size:12.5px}
+table.dates th{
+  text-align:left; font-size:10px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-faint); font-weight:600; padding:0 8px 7px; border-bottom:1px solid var(--line);
+  white-space:nowrap;
+}
+table.dates td{padding:8px; border-bottom:1px solid var(--line-soft); vertical-align:top}
+table.dates tr:last-child td{border-bottom:0}
+.d-date{font-family:var(--f-mono); font-variant-numeric:tabular-nums; white-space:nowrap; font-size:11.5px}
+.d-what{min-width:150px; line-height:1.35}
+.d-kind{
+  display:inline-block; font-size:9.5px; letter-spacing:.08em; text-transform:uppercase;
+  font-weight:700; margin-top:3px; color:var(--ink-faint);
+}
+.d-kind.admin{color:var(--gold)}
+.d-kind.mock{color:var(--amber)}
+.d-kind.meta{color:var(--celeste-ink)}
+.d-kind.examen{color:var(--gold)}
+.d-in{white-space:nowrap; text-align:right}
+.d-when{font-family:var(--f-mono); font-size:11.5px; font-weight:600; display:block}
+.d-acts{display:inline-flex; gap:3px; margin-top:5px}
+.d-b{
+  background:transparent; border:1px solid var(--line); border-radius:3px;
+  font-size:9.5px; line-height:1; padding:3px 5px; color:var(--ink-faint);
+  letter-spacing:.02em;
+}
+.d-b:hover{border-color:var(--accent); color:var(--accent-ink)}
+.d-b.on-ok{background:var(--green); border-color:var(--green); color:var(--on-green); font-weight:700}
+.d-b.on-na{background:var(--ink-faint); border-color:var(--ink-faint); color:var(--card); font-weight:700}
+tr.dr{border-left:3px solid transparent}
+tr.dr td:first-child{border-left:3px solid var(--sev,transparent); padding-left:9px}
+tr.dr.past{opacity:.45}
+tr.dr.past .d-what{text-decoration:line-through; text-decoration-color:var(--ink-faint)}
+tr.dr.na{opacity:.4}
+tr.dr.na .d-what{text-decoration:line-through; text-decoration-color:var(--ink-faint)}
+.cal-d.is-resolved{opacity:.45}
+
+/* ───────────────────────── review phase ───────────────────────── */
+.rev-meter{height:4px; border-radius:2px; background:var(--line-soft); overflow:hidden; margin-bottom:15px}
+.rev-fill{height:100%; width:0; background:var(--gold); transition:width .35s ease}
+.rev{display:flex; flex-direction:column; gap:13px}
+.rv{border-left:2px solid var(--line); padding-left:12px}
+.rv.done{border-left-color:var(--gold)}
+.rv-head{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; margin-bottom:4px}
+.rv-w{font-size:11px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:var(--ink-soft)}
+.rv.done .rv-w{color:var(--gold)}
+.rv-d{font-family:var(--f-mono); font-size:10.5px; color:var(--ink-faint)}
+.rv-n{font-family:var(--f-mono); font-size:10.5px; color:var(--ink-faint); margin-left:auto}
+.rv-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column}
+.rv-i label{
+  display:grid; grid-template-columns:auto minmax(0,1fr); gap:9px; align-items:baseline;
+  padding:3px 5px; border-radius:3px; cursor:pointer;
+}
+.rv-i label:hover{background:var(--card-2)}
+.rv-i input{
+  appearance:none; -webkit-appearance:none; margin:0; width:13px; height:13px; flex:none;
+  border:1.5px solid var(--line); border-radius:3px; background:var(--card-2);
+  position:relative; top:2px; cursor:pointer; transition:background .15s, border-color .15s;
+}
+.rv-i input:hover{border-color:var(--accent)}
+.rv-i input:checked{background:var(--gold); border-color:var(--gold)}
+.rv-i input:checked::after{
+  content:""; position:absolute; left:3.5px; top:.5px; width:3.5px; height:7px;
+  border:solid var(--on-gold); border-width:0 2px 2px 0; transform:rotate(42deg);
+}
+.rv-t{font-size:12.5px; line-height:1.35}
+.rv-i.on .rv-t{color:var(--ink-faint); text-decoration:line-through; text-decoration-color:var(--gold-line)}
+.rv-score{display:flex; align-items:center; gap:6px; margin:1px 0 5px 27px}
+.rv-score span{font-size:9.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-faint); font-weight:600}
+.rv-score input{
+  width:50px; font-family:var(--f-mono); font-variant-numeric:tabular-nums; font-size:12px;
+  text-align:right; background:var(--card-2); border:1px solid var(--line); border-radius:3px;
+  padding:2px 5px; color:var(--ink);
+}
+.rv-score input:focus{border-color:var(--accent); outline:none}
+.rv-score input.has{border-color:var(--gold); color:var(--gold); font-weight:700}
+.rv-score em{font-style:normal; font-family:var(--f-mono); font-size:11px; color:var(--ink-faint)}
+
+/* ───────────────────────── datos y respaldo ───────────────────────── */
+.data-body{display:flex; flex-direction:column; gap:12px}
+.data-note{margin:0; font-size:12.5px; line-height:1.5; color:var(--ink-soft); max-width:64ch}
+.data-note strong{color:var(--ink); font-weight:600}
+.data-acts{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+.btn{
+  background:var(--card-2); border:1px solid var(--line); border-radius:4px;
+  padding:6px 13px; font-size:12.5px; color:var(--ink-soft); cursor:pointer;
+  display:inline-flex; align-items:center; gap:6px; line-height:1.2;
+}
+.btn:hover{border-color:var(--accent); color:var(--accent-ink)}
+.btn.primary{border-color:var(--accent); color:var(--accent-ink); font-weight:600}
+.btn.primary:hover{background:var(--accent-soft)}
+.btn.danger:hover{border-color:var(--red); color:var(--red)}
+.saved-when{font-family:var(--f-mono); font-size:10.5px; color:var(--ink-faint)}
+.saved-when.flash{color:var(--green)}
+.data-msg{
+  margin:0; font-size:12px; padding:8px 11px; border-radius:4px;
+  border:1px solid var(--line); background:var(--card-2); color:var(--ink-soft);
+}
+.data-msg.ok{border-color:var(--green-line); color:var(--green)}
+.data-msg.bad{border-color:var(--red); color:var(--red)}
+.msg-link{
+  background:none; border:0; padding:0; font-size:inherit; color:var(--accent-ink);
+  text-decoration:underline; text-underline-offset:2px;
+}
+.data-ta{
+  width:100%; font-family:var(--f-mono); font-size:11px; line-height:1.4;
+  background:var(--card-2); color:var(--ink-soft); border:1px solid var(--line);
+  border-radius:4px; padding:8px; resize:vertical;
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important; animation:none !important}
+}
+</style>
+
+<div id="authScreen" class="auth-screen">
+  <div class="auth-box">
+    <p class="eyebrow">Plan Maestro CFA Level I</p>
+    <h1>Inicia sesión</h1>
+    <form id="authForm" novalidate>
+      <label for="authEmail">Correo</label>
+      <input id="authEmail" type="email" autocomplete="email" required>
+      <label for="authPassword">Contraseña</label>
+      <input id="authPassword" type="password" autocomplete="current-password" minlength="6" required>
+      <p class="auth-forgot"><a href="#" id="authForgot">¿Olvidaste tu contraseña?</a></p>
+      <p class="auth-error" id="authError" hidden></p>
+      <button type="submit" class="btn primary" id="authSubmitBtn">Entrar</button>
+    </form>
+    <p class="auth-switch">
+      <span id="authSwitchText">¿No tienes cuenta?</span>
+      <button type="button" id="authSwitchBtn" class="msg-link">Crear una</button>
+    </p>
+    <p class="auth-loading" id="authLoading" hidden>Conectando…</p>
+  </div>
+</div>
+
+<div class="wrap" id="page">
+
+  <!-- ═══════════ masthead ═══════════ -->
+  <header class="panel">
+    <div class="mast">
+      <div class="mast-id">
+        <div class="eyebrow">Chartered Financial Analyst · Nivel I · Ventana Agosto 2027</div>
+        <h1>Plan Maestro <em>CFA Level&nbsp;I</em></h1>
+        <div class="mast-sub" id="mast-sub">Sol Paloma Avellaneda Sánchez · 10 temas · 102 Learning Modules</div>
+      </div>
+      <div class="mast-stats">
+        <div class="stat"><span class="stat-n accent mono" id="s-done">0</span><span class="stat-l">Módulos hechos</span></div>
+        <div class="stat"><span class="stat-n mono" id="s-streak">0</span><span class="stat-l">Días de racha</span></div>
+        <div class="stat"><span class="stat-n gold mono" id="s-days">—</span><span class="stat-l">Días al examen</span></div>
+      </div>
+    </div>
+    <div class="meter-block">
+      <div class="meter-top">
+        <span class="meter-pct mono" id="m-pct">0.0%</span>
+        <span class="meter-note" id="m-note">0 de 102 Learning Modules completados</span>
+      </div>
+      <div class="meter-rail"><div class="meter-fill" id="m-fill"></div></div>
+      <div class="meter-ticks"><span>19 sep 2026</span><span>Fin de contenido · jul 2027</span></div>
+    </div>
+  </header>
+
+  <!-- ═══════════ calendar + chart ═══════════ -->
+  <section class="band">
+    <div class="panel">
+      <div class="sec-head">
+        <h2>Almanaque</h2>
+        <div class="cal-nav">
+          <button id="cal-prev" aria-label="Mes anterior">‹</button>
+          <span class="cal-month mono" id="cal-month">—</span>
+          <button id="cal-next" aria-label="Mes siguiente">›</button>
+          <button class="today-btn" id="cal-today">Hoy</button>
+        </div>
+      </div>
+      <div class="sec-body">
+        <div class="cal-grid" id="cal-dow"></div>
+        <div class="cal-grid" id="cal-grid"></div>
+        <div class="legend">
+          <span><i class="sw goal"></i>Meta del cronograma</span>
+          <span><i class="sw done"></i>Semana terminada</span>
+          <span><i class="sw late"></i>Meta vencida</span>
+          <span><i class="sw gold"></i>Trámite / entrega</span>
+          <span><i class="sw exam"></i>Ventana de examen</span>
+          <span><i class="sw today"></i>Hoy</span>
+        </div>
+        <figure class="quote">
+          <p id="quote-txt">—</p>
+          <footer id="quote-day">—</footer>
+        </figure>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="sec-head">
+        <h2>Ritmo diario y Horas</h2>
+        <span class="eyebrow">Últimos 14 días</span>
+      </div>
+      <div class="sec-body chart-wrap">
+        
+        <!-- MÓDULOS -->
+        <div class="chart" id="chart"></div>
+        <div class="chart-x" id="chart-x"></div>
+        <div class="chart-legend">
+          <span>Hoy <b id="c-today">0</b> módulos</span>
+          <span><b id="c-sec">0</b> secciones</span>
+          <span>Media 14 d <b id="c-avg">0.0</b></span>
+          <span>Mejor día <b id="c-best">0</b></span>
+        </div>
+        <div class="pace" id="pace" style="margin-bottom:8px;"><span class="tag" id="pace-tag">—</span><span id="pace-txt">—</span></div>
+        
+        <hr style="border:0; border-top:1px solid var(--line-soft); margin: 5px 0 10px 0;">
+        
+        <!-- HORAS DE ESTUDIO (Gráfico Lineal) -->
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 5px;">
+          <h3 style="font-size:14px; margin:0; font-family:var(--f-ui); color:var(--ink-soft)">Horas de estudio</h3>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <label for="hours-input" style="font-size:10px; color:var(--ink-faint); font-weight:700; text-transform:uppercase;">Horas Hoy:</label>
+            <input type="number" id="hours-input" step="0.5" min="0" placeholder="0" style="width:60px; font-family:var(--f-mono); font-size:12px; text-align:center; background:var(--card-2); border:1px solid var(--line); border-radius:4px; padding:3px 5px; color:var(--ink);">
+          </div>
+        </div>
+        <div class="chart" id="hours-chart" style="height:70px"></div>
+        <div class="chart-x" id="hours-chart-x"></div>
+        <div class="chart-legend">
+          <span>Total 14d: <b id="h-total">0</b> h</span>
+          <span>Media 14d: <b id="h-avg">0.0</b> h</span>
+          <span>Récord: <b id="h-best">0</b> h</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ checklist + rail ═══════════ -->
+  <section class="main">
+    <div class="panel">
+      <div class="sec-head">
+        <h2>Temario</h2>
+        <span class="eyebrow" id="topics-note">0 / 102</span>
+      </div>
+      <div class="topics" id="topics"></div>
+    </div>
+
+    <div class="rail">
+      <div class="panel">
+        <div class="sec-head"><h2>Fechas que se acercan</h2><span class="eyebrow">Trámites y metas</span></div>
+        <div class="sec-body tbl-scroll">
+          <table class="dates">
+            <thead><tr><th>Fecha</th><th>Qué toca</th><th style="text-align:right">Estado</th></tr></thead>
+            <tbody id="dates-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="sec-head">
+          <h2>Repaso final y mocks</h2>
+          <span class="eyebrow" id="rev-note">0 / 7</span>
+        </div>
+        <div class="sec-body">
+          <div class="rev-meter"><div class="rev-fill" id="rev-fill"></div></div>
+          <div class="rev" id="rev"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="panel">
+    <div class="sec-head">
+      <h2>Tu progreso</h2>
+      <span class="saved-when" id="saved-when">—</span>
+    </div>
+    <div class="sec-body data-body">
+      <p class="data-note account-note">
+        Sesión iniciada como <strong id="account-email"></strong> — tu progreso se sincroniza solo
+        entre tus dispositivos. Descarga un respaldo cada tanto de todas formas, por si acaso.
+      </p>
+      <div class="data-acts">
+        <button type="button" class="btn primary" id="dl">Descargar respaldo</button>
+        <label class="btn" for="up">Restaurar respaldo</label>
+        <input type="file" id="up" accept=".json,application/json" hidden>
+        <button type="button" class="btn danger" id="reset">Reiniciar progreso</button>
+        <button type="button" class="btn" id="logoutBtn">Cerrar sesión</button>
+      </div>
+      <p class="data-msg" id="data-msg" hidden></p>
+      <textarea class="data-ta" id="data-ta" hidden readonly rows="5"
+        aria-label="Respaldo en texto para copiar manualmente"></textarea>
+    </div>
+  </footer>
+</div>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import {
+  getAuth, onAuthStateChanged, signOut,
+  signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAaxzMkSsanZI2EohnHpDBWpDg_MrH5Vrg",
+  authDomain: "cuaderno-y-habitos.firebaseapp.com",
+  projectId: "cuaderno-y-habitos",
+  storageBucket: "cuaderno-y-habitos.firebasestorage.app",
+  messagingSenderId: "646555818104",
+  appId: "1:646555818104:web:91767aad5956dfca2e758d"
+};
+const fbApp = initializeApp(firebaseConfig);
+const auth = getAuth(fbApp);
+const db = getFirestore(fbApp);
+
+/* ═══════════ datos ═══════════ */
+const TOPICS = [{"name":"Quantitative Methods","weight":"6–9%","weeks":[{"label":"Semana 1","lms":[{"code":"LM1","title":"Returns of Financial Assets and Instruments","sec":["Financial Returns","Common Return Measures","Practice Problems"]},{"code":"LM2","title":"Types of Financial Returns","sec":["Types of Returns for Financial Assets, Instruments, and Indicators","Practice Problems"]},{"code":"LM3","title":"Benchmarking Returns","sec":["Money-Weighted and Time-Weighted Rates of Return","Index Definition and Calculation","Practice Problems"]},{"code":"LM4","title":"The Time Value of Money in Finance","sec":["Time Value of Money in Fixed Income and Equity","Implied Return and Growth","Cash Flow Additivity","Practice Problems"]},{"code":"LM5","title":"Statistical Characteristics of Asset Returns","sec":["Measures of Central Tendency and Dispersion","Measures of Shape of a Distribution","Covariance and Correlation between Variables","Other Dispersion Measures","Practice Problems"]},{"code":"LM6","title":"Statistical Distributions for Financial Asset Prices and Returns","sec":["Random Variables and Unconditional Expectations","Key Statistical Distributions in Finance","Conditional Expectations, Variances, and Covariances","Bayesian Updating","Practice Problems"]}]},{"label":"Semana 2","lms":[{"code":"LM7","title":"Estimation and Hypothesis Testing","sec":["The Central Limit Theorem, Confidence Intervals, and Sampling","Hypothesis Testing and Parametric Testing","Non-Parametric Tests","Practice Problems"]},{"code":"LM8","title":"The Return and Risk of a Financial Portfolio","sec":["Calculating Portfolio Statistics","The Minimum–Variance Portfolio and the Efficient Frontier","Optimal Portfolio Selection","Practice Problems"]},{"code":"LM9","title":"Simulation of Financial Asset Prices and Returns","sec":["Historical Simulation","Bootstrapping","Monte Carlo Simulation","Practice Problems"]},{"code":"LM10","title":"Applications of Simple Linear Regression in Finance","sec":["Linear Regression Estimation","Limitations of Linear Regression Models","Using Linear Regression Models for Prediction","Using Linear Regression Models to Evaluate Financial Assets: The Capital Asset Pricing Model","Practice Problems"]},{"code":"LM11","title":"Introduction to Financial Data Science","sec":["Practice Problems"]}]}]},{"name":"Economics","weight":"6–9%","weeks":[{"label":"Semana 1","lms":[{"code":"LM1","title":"The Firm and Market Structures","sec":["Profit Maximization: Production Breakeven, Shutdown and Economies of Scale","Monopolistic Competition","Oligopoly","Determining Market Structure","Practice Problems"]},{"code":"LM2","title":"Understanding Business Cycles","sec":["Overview of the Business Cycle","Credit Cycles","Economic Indicators over the Business Cycle","Practice Problems"]},{"code":"LM3","title":"Fiscal Policy","sec":["Roles and Objectives of Fiscal Policy","Fiscal Policy Tools","Fiscal Policy Implementation","Practice Problems"]},{"code":"LM4","title":"Monetary Policy","sec":["Role of Central Banks","Monetary Policy Tools and Monetary Transmission","Monetary Policy Objectives","Interaction of Monetary and Fiscal Policy","Practice Problems"]}]},{"label":"Semana 2","lms":[{"code":"LM5","title":"Introduction to Geopolitics","sec":["National Governments and Political Cooperation","Forces of Globalization","International Trade Organizations","Assessing Geopolitical Actors and Risk","The Tools of Geopolitics","Geopolitical Risk and the Investment Process","Practice Problems"]},{"code":"LM6","title":"International Trade","sec":["Benefits and Costs of Trade","Trade Restrictions and Agreements—Tariffs, Quotas, and Export Subsidies","Trading Blocs and Regional Integration","Practice Problems"]},{"code":"LM7","title":"Capital Flows and the FX Market","sec":["The Foreign Exchange Market and Exchange Rates","Exchange Rate Regimes: Ideals and Historical Perspective","Capital Restrictions","Practice Problems"]},{"code":"LM8","title":"Exchange Rate Calculations","sec":["Cross-Rate Calculations","Forward Rate Calculations","Practice Problems"]}]}]},{"name":"Corporate Issuers","weight":"6–9%","weeks":[{"label":"Semana 1","lms":[{"code":"LM1","title":"Organizational Forms, Corporate Issuer Features, and Ownership","sec":["Organizational Forms of Businesses","Key Features of Corporate Issuers","Publicly vs. Privately Owned Corporate Issuers","Practice Problems"]},{"code":"LM2","title":"Investors and Other Stakeholders","sec":["Financial Claims of Lenders and Shareholders","Corporate Stakeholders and Governance","Corporate ESG Considerations","Practice Problems"]},{"code":"LM3","title":"Corporate Governance: Conflicts, Mechanisms, Risks, and Benefits","sec":["Stakeholder Conflicts and Management","Corporate Governance Mechanisms","Corporate Governance Risks and Benefits","Practice Problems"]},{"code":"LM4","title":"Working Capital and Liquidity","sec":["Cash Conversion Cycle","Liquidity","Managing Working Capital and Liquidity","Practice Problems"]}]},{"label":"Semana 2","lms":[{"code":"LM5","title":"Capital Investments and Capital Allocation","sec":["Capital Investments","Capital Allocation","Capital Allocation Principles and Pitfalls","Real Options","Practice Problems"]},{"code":"LM6","title":"Capital Structure","sec":["The Cost of Capital","Factors Affecting Capital Structure","Modigliani–Miller Capital Structure Propositions","Optimal Capital Structure","Practice Problems"]},{"code":"LM7","title":"Business Models","sec":["Defining the Business Model","Business Model Types","Practice Problems"]}]}]},{"name":"Financial Statement Analysis","weight":"11–14%","weeks":[{"label":"Semana 1","lms":[{"code":"LM1","title":"Introduction to Financial Statement Analysis","sec":["Financial Statement Analysis Framework","Scope of Financial Statement Analysis","Regulated Sources of Information","Comparison of IFRS with Alternative Financial Reporting Systems","Other Sources of Information","Practice Problems"]},{"code":"LM2","title":"Analyzing Income Statements","sec":["Revenue Recognition","Expense Recognition","Non-Recurring Items","Earnings per Share","Income Statement Ratios and Common-Size Analysis","Practice Problems"]},{"code":"LM3","title":"Analyzing Balance Sheets","sec":["Intangible Assets","Goodwill","Financial Instruments","Non-Current Liabilities","Ratios and Common-Size Analysis","Practice Problems"]}]},{"label":"Semana 2","lms":[{"code":"LM4","title":"Analyzing Statements of Cash Flows I","sec":["Linkages between the Financial Statements","The Direct Method for Cash Flows from Operating Activities","The Indirect Method for Cash Flows from Operating Activities","Conversion from the Indirect to Direct Method","Cash Flows from Investing Activities","Cash Flows from Financing Activities","Differences in Cash Flow Statements Prepared under US GAAP versus IFRS","Practice Problems"]},{"code":"LM5","title":"Analyzing Statements of Cash Flows II","sec":["Evaluating Sources and Uses of Cash","Ratios and Common-Size Analysis","Free Cash Flow Measures","Cash Flow Statement Analysis: Cash Flow Ratios","Practice Problems"]},{"code":"LM6","title":"Analysis of Inventories","sec":["Inventory Valuation","The Effects of Inflation and Deflation on Inventories, Costs of Sales, and Gross Margin","Presentation and Disclosure","Practice Problems"]}]},{"label":"Semana 3","lms":[{"code":"LM7","title":"Analysis of Long-Term Assets","sec":["Acquisition of Intangible Assets","Impairment and Derecognition of Assets","Presentation and Disclosure","Using Disclosures in Analysis","Practice Problems"]},{"code":"LM8","title":"Topics in Long-Term Liabilities and Equity","sec":["Leases","Financial Reporting for Postemployment and Share-Based Compensation Plans","Presentation and Disclosure","Practice Problems"]},{"code":"LM9","title":"Analysis of Income Taxes","sec":["Differences between Accounting Profit and Taxable Income","Deferred Tax Assets and Liabilities","Corporate Income Tax Rates","Presentation and Disclosure","Practice Problems"]}]},{"label":"Semana 4","lms":[{"code":"LM10","title":"Financial Reporting Quality","sec":["Conceptual Overview","GAAP, Decision Useful Financial Reporting","Biased Accounting Choices","Departures from GAAP","Differentiate between Conservative and Aggressive Accounting","Context for Assessing Financial Reporting Quality","Mechanisms That Discipline Financial Reporting Quality","Detection of Financial Reporting Quality Issues: Introduction and Presentation Choices","Accounting Choices and Estimates","Accounting Choices That Affect the Cash Flow Statement","Accounting Choices that Affect Financial Reporting","Warning Signs","Practice Problems"]},{"code":"LM11","title":"Financial Analysis Techniques","sec":["The Financial Analysis Process","Analytical Tools and Techniques","Financial Ratio Analysis","Common Size Balance Sheets and Income Statements","Cross-Sectional, Trend Analysis, and Relationships in Financial Statements","The Use of Graphs and Regression Analysis","Common Ratio Categories, Interpretation, and Context","Activity Ratios","Liquidity Ratios","Solvency Ratios","Profitability Ratios","Integrated Financial Ratio Analysis","DuPont Analysis—The Decomposition of ROE","Industry-Specific Financial Ratios","Model Building and Forecasting","Practice Problems"]},{"code":"LM12","title":"Introduction to Financial Statement Modeling","sec":["Building a Financial Statement Model","Behavioral Finance and Analyst Forecasts","The Impact of Competitive Factors in Prices and Costs","Modeling Inflation and Deflation","The Forecast Horizon and Long-Term Forecasting","Practice Problems"]}]}]},{"name":"Equity Investments","weight":"11–14%","weeks":[{"label":"Semana 1","lms":[{"code":"LM1","title":"Equity Instrument Features","sec":["Equity Instrument Features","Publicly Listed versus Private Equity Securities","Practice Problems"]},{"code":"LM2","title":"Equity Jurisdictions, Classes, and the Voting Process","sec":["Jurisdictions and Equity Classes","Equity Voting Process","Practice Problems"]},{"code":"LM3","title":"Equity Issuance and Trading","sec":["Primary and Secondary Public Equity Markets","Equity Trading Venues","Equity Liquidity Measures","Equity Indexes","Practice Problems"]}]},{"label":"Semana 2","lms":[{"code":"LM4","title":"Sources of Equity Returns","sec":["Dividends, Share Repurchases, and Stock Splits","Dividend Payment Chronology","Equity Total Return","Practice Problems"]},{"code":"LM5","title":"Introduction to Equity Valuation","sec":["Equity Price and Value","Observable Measures of Company Value","Equity Valuation Models","Practice Problems"]},{"code":"LM6","title":"Discounted Cash Flow (DCF) and Growth Models","sec":["Present Value Models for Equity Instruments","Growth Assumptions in Present Value Models","Limitations of Discounted Cash Flow Growth Models","Preferred Stock Valuation","Practice Problems"]}]},{"label":"Semana 3","lms":[{"code":"LM7","title":"Relative Value Equity Valuation Approaches","sec":["Price Multiples and Equity Valuation","Price and Enterprise Value Multiples","Peer Groups for Multiples Valuation","Use of Multiples to Estimate Equity Value","Practice Problems"]},{"code":"LM8","title":"Financial Statement Forecasting in Equity Valuation","sec":["Financial Statement Model Uses in Equity Valuation","Model Construction Based on Company Characteristics","Equity Valuation and Financial Statement Model Output","Practice Problems"]},{"code":"LM9","title":"Industry and Competitive Analysis","sec":["Industry and Competitive Analysis Process","Industry Classification","Industry Survey","Porter’s Five Forces and the PESTLE Framework","Practice Problems"]}]},{"label":"Semana 4","lms":[{"code":"LM10","title":"Company Analysis: Past, Present, and Future","sec":["Company Competitive Strategy and Industry Position","Company Revenue, Pricing Power, and Operating Profitability","Working Capital, Capital Investments, and Capital Structure","Practice Problems"]},{"code":"LM11","title":"Equity Analyst Research Reports","sec":["Equity Analyst Research Report Contents","Sell-Side Versus Buy-Side Equity Analyst Reports","Equity Research Reconciliation","Practice Problems"]},{"code":"LM12","title":"The Capital Asset Pricing Model, Market Model, and Other Factor-Based Equity Models","sec":["Use of the Market Model and CAPM to Estimate Cost of Equity","Arbitrage Pricing Theory","Practice Problems"]}]}]},{"name":"Fixed Income","weight":"11–14%","weeks":[{"label":"Semana 1","lms":[{"code":"LM1","title":"Fixed-Income Instrument Features","sec":["Features of Fixed-Income Securities","Bond Indentures and Covenants","Practice Problems"]},{"code":"LM2","title":"Fixed-Income Cash Flows and Types","sec":["Fixed-Income Cash Flow Structures","Fixed-Income Contingency Provisions","Legal, Regulatory, and Tax Considerations","Practice Problems"]},{"code":"LM3","title":"Fixed-Income Issuance and Trading","sec":["Fixed-Income Segments, Issuers, and Investors","Fixed-Income Indexes","Primary and Secondary Fixed-Income Markets","Practice Problems"]},{"code":"LM4","title":"Fixed-Income Markets for Corporate Issuers","sec":["Short-Term Funding Alternatives","Repurchase Agreements","Long-Term Corporate Debt","Practice Problems"]},{"code":"LM5","title":"Fixed-Income Markets for Government Issuers","sec":["Sovereign Debt","Sovereign Debt Issuance and Trading","Non-Sovereign, Quasi-Government, and Supranational Agency Debt","Practice Problems"]}]},{"label":"Semana 2","lms":[{"code":"LM6","title":"Fixed-Income Bond Valuation: Prices and Yields","sec":["Bond Pricing and the Time Value of Money","Relationships between Bond Prices and Bond Features","Matrix Pricing","Practice Problems"]},{"code":"LM7","title":"Yield and Yield Spread Measures for Fixed-Rate Bonds","sec":["Periodicity and Annualized Yields","Other Yield Measures, Conventions, and Accounting for Embedded Options","Yield Spread Measures for Fixed-Rate Bonds and Matrix Pricing","Practice Problems"]},{"code":"LM8","title":"Yield and Yield Spread Measures for Floating-Rate Instruments","sec":["Yield and Yield Spread Measures for Floating-Rate Notes","Yield Measures for Money Market Instruments","Practice Problems"]},{"code":"LM9","title":"The Term Structure of Interest Rates: Spot, Par, and Forward Curves","sec":["Maturity Structure of Interest Rates and Spot Rates","Par and Forward Rates","Spot, Par, and Forward Yield Curves and Interpreting Their Relationship","Practice Problems"]},{"code":"LM10","title":"Interest Rate Risk and Return","sec":["Sources of Return from Investing in a Fixed-Rate Bond","Investment Horizon and Interest Rate Risk","Macaulay Duration","Practice Problems"]}]},{"label":"Semana 3","lms":[{"code":"LM11","title":"Yield-Based Bond Duration Measures and Properties","sec":["Modified Duration","Money Duration and Price Value of a Basis Point","Properties of Duration","Practice Problems"]},{"code":"LM12","title":"Yield-Based Bond Convexity and Portfolio Properties","sec":["Bond Convexity and Convexity Adjustment","Bond Risk and Return Using Duration and Convexity","Portfolio Duration and Convexity","Practice Problems"]},{"code":"LM13","title":"Curve-Based and Empirical Fixed-Income Risk Measures","sec":["Curve-Based Interest Rate Risk Measures","Bond Risk and Return Using Curve-Based Duration and Convexity","Key Rate Duration as a Measure of Yield Curve Risk","Empirical Duration","Practice Problems"]},{"code":"LM14","title":"Credit Risk","sec":["Sources of Credit Risk","Credit Rating Agencies and Credit Ratings","Factors Impacting Yield Spreads","Practice Problems"]},{"code":"LM15","title":"Credit Analysis for Government Issuers","sec":["Sovereign Credit Analysis","Non-Sovereign Credit Risk","Practice Problems"]}]},{"label":"Semana 4","lms":[{"code":"LM16","title":"Credit Analysis for Corporate Issuers","sec":["Assessing Corporate Creditworthiness","Financial Ratios in Corporate Credit Analysis","Seniority Rankings, Recovery Rates, and Credit Ratings","Practice Problems"]},{"code":"LM17","title":"Fixed-Income Securitization","sec":["The Benefits of Securitization","The Securitization Process","Practice Problems"]},{"code":"LM18","title":"Asset-Backed Security (ABS) Instrument and Market Features","sec":["Covered Bonds","ABS Structures to Address Credit Risk","Non-Mortgage Asset-Backed Securities","Collateralized Debt Obligations","Practice Problems"]},{"code":"LM19","title":"Mortgage-Backed Security (MBS) Instrument and Market Features","sec":["Time Tranching","Mortgage Loans and Their Characteristic Features","Residential Mortgage-Backed Securities (RMBS)","Commercial Mortgage-Backed Securities (CMBS)","Practice Problems"]}]}]},{"name":"Derivatives","weight":"5–8%","weeks":[{"label":"Semana 1","lms":[{"code":"LM1","title":"Derivative Instrument and Derivative Market Features","sec":["Derivative Features","Derivative Underlyings","Derivative Markets","Practice Problems"]},{"code":"LM2","title":"Forward Commitment and Contingent Claim Features and Instruments","sec":["Forwards, Futures, and Swaps","Futures","Swaps","Options","Credit Derivatives","Forward Commitments vs. Contingent Claims","Practice Problems"]},{"code":"LM3","title":"Derivative Benefits, Risks, and Issuer and Investor Uses","sec":["Derivative Benefits","Derivative Risks","Issuer Use of Derivatives","Investor Use of Derivatives","Practice Problems"]},{"code":"LM4","title":"Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives","sec":["Arbitrage","Replication","Costs and Benefits Associated with Owning the Underlying","Practice Problems"]},{"code":"LM5","title":"Pricing and Valuation of Forward Contracts and for an Underlying with Varying Maturities","sec":["Pricing and Valuation of Forward Contracts","Pricing and Valuation of Interest Rate Forward Contracts","Practice Problems"]}]},{"label":"Semana 2","lms":[{"code":"LM6","title":"Pricing and Valuation of Futures Contracts","sec":["Pricing of Futures Contracts at Inception","MTM Valuation: Forwards versus Futures","Interest Rate Futures versus Forward Contracts","Forward and Futures Price Differences","Interest Rate Forward and Futures Price Differences","Effect of Central Clearing of OTC Derivatives","Practice Problems"]},{"code":"LM7","title":"Pricing and Valuation of Interest Rate and Other Swaps","sec":["Swaps vs. Forwards","Swap Values and Prices","Practice Problems"]},{"code":"LM8","title":"Pricing and Valuation of Options","sec":["Option Value relative to the Underlying Spot Price","Option Exercise Value","Option Moneyness","Option Time Value","Arbitrage","Replication","Factors Affecting Option Value","Practice Problems"]},{"code":"LM9","title":"Option Replication Using Put–Call Parity","sec":["Put–Call Parity","Option Strategies Based on Put–Call Parity","Put–Call Forward Parity and Option Applications","Put–Call Forward Parity","Option Put–Call Parity Applications: Firm Value","Practice Problems"]},{"code":"LM10","title":"Valuing a Derivative Using a One-Period Binomial Model","sec":["Binomial Valuation","The Binomial Model","Pricing a European Call Option","Risk Neutrality","Practice Problems"]}]}]},{"name":"Alternative Investments","weight":"7–10%","weeks":[{"label":"Semana 1","lms":[{"code":"LM1","title":"Alternative Investment Features, Methods, and Structures","sec":["Alternative Investment Features","Alternative Investment Methods","Alternative Investment Structures","Practice Problems"]},{"code":"LM2","title":"Alternative Investment Performance and Returns","sec":["Alternative Investment Performance","Alternative Investment Returns","Practice Problems"]},{"code":"LM3","title":"Investments in Private Capital: Equity and Debt","sec":["Private Equity Investment Characteristics","Private Debt Investment Characteristics","Diversification Benefits of Private Capital","Practice Problems"]}]},{"label":"Semana 2","lms":[{"code":"LM4","title":"Real Estate and Infrastructure","sec":["Real Estate Features","Real Estate Investment Characteristics","Infrastructure Investment Features","Infrastructure Investment Characteristics","Practice Problems"]},{"code":"LM5","title":"Natural Resources","sec":["Natural Resources Investment Features","Commodity Investment Forms","Natural Resource Investment Risk, Return, and Diversification","Practice Problems"]}]},{"label":"Semana 3","lms":[{"code":"LM6","title":"Hedge Funds","sec":["Hedge Fund Investment Features","Hedge Fund Investment Forms","Hedge Fund Investment Risk, Return, and Diversification","Practice Problems"]},{"code":"LM7","title":"Introduction to Digital Assets","sec":["Distributed Ledger Technology","Digital Asset Investment Features","Digital Asset Investment Forms","Digital Asset Investment Risk, Return, and Diversification","Practice Problems"]}]}]},{"name":"Portfolio Management (Construction)","weight":"8–12%","weeks":[{"label":"Semana 1","lms":[{"code":"LM1","title":"Portfolio Risk and Return: Part I","sec":["Historical Return and Risk","Other Investment Characteristics","Risk Aversion and Portfolio Selection","Utility Theory and Indifference Curves","Application of Utility Theory to Portfolio Selection","Portfolio Risk & Portfolio of Two Risky Assets","Portfolio of Many Risky Assets","The Power of Diversification","Efficient Frontier: Investment Opportunity Set & Minimum Variance Portfolios","Efficient Frontier: A Risk-Free Asset and Many Risky Assets","Efficient Frontier: Optimal Investor Portfolio","Practice Problems"]},{"code":"LM2","title":"Portfolio Risk and Return: Part II","sec":["Capital Market Theory: Risk-Free and Risky Assets","Capital Market Theory: The Capital Market Line","Capital Market Theory: CML - Leveraged Portfolios","Systematic and Nonsystematic Risk","Return Generating Models","Calculation and Interpretation of Beta","Capital Asset Pricing Model: Assumptions and the Security Market Line","Capital Asset Pricing Model: Applications","Beyond CAPM: Limitations and Extensions of CAPM","Portfolio Performance Appraisal Measures","Applications of the CAPM in Portfolio Construction","Practice Problems"]}]},{"label":"Semana 2","lms":[{"code":"LM3","title":"Portfolio Management: An Overview","sec":["Portfolio Perspective: Diversification and Risk Reduction","Portfolio Perspective: Risk-Return Trade-off, Downside Protection, Modern Portfolio Theory","Steps in the Portfolio Management Process","Types of Investors","The Asset Management Industry","Pooled Interest - Mutual Funds","Pooled Interest - Type of Mutual Funds","Pooled Interest - Other Investment Products","Practice Problems"]},{"code":"LM4","title":"Basics of Portfolio Planning and Construction","sec":["The Investment Policy Statement","IPS Risk and Return Objectives","IPS Constraints","Gathering Client Information","Portfolio Construction and Capital Market Expectations","Strategic Asset Allocation","Portfolio Construction Principles","ESG Considerations in Portfolio Planning and Construction","Practice Problems"]}]},{"label":"Semana 3","lms":[{"code":"LM5","title":"The Behavioral Biases of Individuals","sec":["Behavioral Bias Categories","Cognitive Errors","Emotional Biases","Behavioral Finance and Market Behavior","Practice Problems"]},{"code":"LM6","title":"Introduction to Risk Management","sec":["Risk Management Process","Risk Management Framework","Risk Governance - An Enterprise View","Risk Tolerance","Risk Budgeting","Identification of Risk - Financial Vs. Non-Financial Risk","Interactions Between Risks","Measuring and Modifying Risk: Drivers and Metrics","Risk Modification: Prevention, Avoidance, and Acceptance","Risk Modification: Transferring, Shifting, and How to Choose","Practice Problems"]}]}]},{"name":"Ethical and Professional Standards","weight":"15–20%","weeks":[{"label":"Semana 1","lms":[{"code":"LM1","title":"Ethics and Trust in the Investment Profession","sec":["Ethics","Ethics and Professionalism","Challenges to Ethical Conduct","Ethical vs. Legal Standards","Ethical Decision-Making Frameworks","Practice Problems"]},{"code":"LM2","title":"Code of Ethics and Standards of Professional Conduct","sec":["Preface","Ethics and the Investment Industry","CFA Institute Code of Ethics and Standards of Professional Conduct","Practice Problems"]}]},{"label":"Semana 2","lms":[{"code":"LM3","title":"Guidance for Standard I: Professionalism","sec":["Standard I: Professionalism","Standard I(A): Knowledge of the Law","Standard I(A) Compliance Practices","Standard I(A) Application of the Standard","Standard I(B): Independence and Objectivity","Standard I(B) Compliance Practices","Standard I(B) Application of the Standard","Standard I(C): Misrepresentation","Standard I(C) Compliance Practices","Standard I(C) Application of the Standard","Standard I(D): Misconduct","Standard I(D) Compliance Practices","Standard I(D) Application of the Standard","Standard I(E): Competence","Standard I(E) Compliance Practices","Standard I(E) Application of the Standard","Practice Problems"]},{"code":"LM4","title":"Guidance for Standard II: Integrity of Capital Markets","sec":["Standard II: Integrity of Capital Markets","Standard II(A): Material Nonpublic Information","Standard II(A) Compliance Practices","Standard II(A) Application of the Standard","Standard II(B): Market Manipulation","Standard II(B) Compliance Practices","Standard II(B) Application of the Standard","Practice Problems"]}]},{"label":"Semana 3","lms":[{"code":"LM5","title":"Guidance for Standard III: Duties to Clients","sec":["Standard III: Duties to Clients","Standard III(A): Loyalty, Prudence, and Care","Standard III(A) Compliance Practices","Standard III(A) Application of the Standard","Standard III(B): Fair Dealing","Standard III(B) Compliance Practices","Standard III(B) Application of the Standard","Standard III(C): Suitability","Standard III(C) Compliance Practices","Standard III(C) Application of the Standard","Standard III(D): Performance Presentation","Standard III(D) Compliance Practices","Standard III(D) Application of the Standard","Standard III(E): Preservation of Confidentiality","Standard III(E) Compliance Practices","Standard III(E) Application of the Standard","Practice Problems"]},{"code":"LM6","title":"Guidance for Standard IV: Duties to Employers","sec":["Standard IV: Duties to Employers","Standard IV(A): Loyalty","Standard IV(A) Compliance Practices","Standard IV(A) Application of the Standard","Standard IV(B): Additional Compensation Arrangements","Standard IV(B) Compliance Practices","Standard IV(B) Application of the Standard","Standard IV(C): Responsibilities of Supervisors","Standard IV(C) Compliance Practices","Standard IV(C) Application of the Standard","Practice Problems"]}]},{"label":"Semana 4","lms":[{"code":"LM7","title":"Guidance for Standard V: Investment Analysis, Recommendations, and Actions","sec":["Standard V: Investment Analysis, Recommendations, and Actions","Standard V(A): Diligence and Reasonable Basis","Standard V(A) Compliance Practices","Standard V(A) Application of the Standard","Standard V(B): Communication with Clients and Prospective Clients","Standard V(B) Compliance Practices","Standard V(B) Application of the Standard","Standard V(C): Record Retention","Standard V(C) Compliance Practices","Standard V(C) Application of the Standard","Practice Problems"]},{"code":"LM8","title":"Guidance for Standard VI: Conflicts of Interest","sec":["Standard VI: Conflicts of Interest","Standard VI(A): Avoid or Disclose Conflicts","Standard VI(A) Application of the Standard","Standard VI(B): Priority of Transactions","Standard VI(B) Compliance Practices","Standard VI(B) Application of the Standard","Standard VI(C): Referral Fees","Standard VI(C) Compliance Practices","Standard VI(C) Application of the Standard","Practice Problems"]}]},{"label":"Semana 5","lms":[{"code":"LM9","title":"Guidance for Standard VII: Responsibilities as a CFA Institute Member or CFA Candidate","sec":["Standard VII: Responsibilities as a CFA Institute Member or CFA Candidate","Standard VII(A): Conduct as Participants in CFA Institute Programs","Standard VII(A) Application of the Standard","Standard VII(B): Reference to CFA Institute, the CFA Designation, and the CFA Program","Standard VII(B) Compliance Practices","Standard VII(B) Application of the Standard","Practice Problems"]}]},{"label":"Semana 6","lms":[{"code":"LM10","title":"Application of the Code and Standards: Level I","sec":["Professionalism","Integrity of Capital Markets","Duties to Clients","Duties to Employers","Investment Analysis, Recommendations, and Actions","Conflicts of Interest","Responsibilities as a CFA Institute Member or CFA Candidate"]}]}]}];
+
+/* ═══════════ FECHAS DINÁMICAS (19 Sep 2026 -> 31 Jul 2027) ═══════════ */
+const START_DATE = new Date(2026, 8, 19); 
+let currDate = new Date(START_DATE);
+
+TOPICS.forEach(topic => {
+  topic.weeks.forEach(week => {
+    let f = new Date(currDate);
+    let t = new Date(currDate);
+    t.setDate(t.getDate() + 8); 
+    week.from = f.toISOString().split('T')[0];
+    week.to = t.toISOString().split('T')[0];
+    currDate.setDate(currDate.getDate() + 9);
+  });
+});
+
+const EXAM_FROM = "2027-08-17", EXAM_TO = "2027-08-23"; 
+
+const REVIEW = [
+  {w:"Semana 1", tasks:["Repaso activo: Ethical and Professional Standards", "Repaso activo: Quantitative Methods", "Repaso activo: Economics", "Armar flashcards y formulario de fórmulas", "Tanda de preguntas cortas de los tres temas"]},
+  {w:"Semana 2", tasks:["Repaso: Financial Statement Analysis", "Repaso: Corporate Issuers", {t:"Mock Exam #1 completo (180 preguntas, 2 sesiones)", mock:"1"}]},
+  {w:"Semana 3", tasks:["Análisis de errores del Mock #1, pregunta por pregunta", "Repaso: Equity Investments", "Repaso: Fixed Income"]},
+  {w:"Semana 4", tasks:["Repaso: Derivatives", "Repaso: Alternative Investments", "Repaso: Portfolio Management", {t:"Mock Exam #2 completo", mock:"2"}]},
+  {w:"Semana 5", tasks:["Análisis de errores del Mock #2", "Repaso enfocado en tus temas más débiles", {t:"Mock Exam #3 (opcional)", mock:"3"}]},
+  {w:"Semana 6", tasks:["Repaso ligero y descanso", "Pasaporte vigente y verificado", "Calculadora lista: BA II Plus o HP 12C", "Confirmar dirección, hora y ruta a la sede"]},
+  {w:"Examen", tasks:["Presentar el examen CFA Level I"]}
+];
+
+REVIEW.forEach((r, i) => {
+  let f = new Date(currDate);
+  let t = new Date(currDate);
+  if(i === REVIEW.length - 1){
+    r.from = EXAM_FROM; r.to = EXAM_TO; 
+    r.d = "17 – 23 ago";
+  } else {
+    t.setDate(t.getDate() + 6); 
+    r.from = f.toISOString().split('T')[0];
+    r.to = t.toISOString().split('T')[0];
+    const ms = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+    r.d = f.getDate() + " " + ms[f.getMonth()] + " – " + t.getDate() + " " + ms[t.getMonth()];
+    currDate.setDate(currDate.getDate() + 7);
+  }
+});
+
+const MILESTONES = [
+  {d:"2026-10-01", k:"gold", t:"Carta de descuento CFA", n:"Enviar la carta al CFA Institute solicitando el descuento."},
+  {d:"2026-11-10", k:"admin", t:"Inscripción al examen (Agosto 2027)", n:"Se abre la inscripción general al examen de nivel I de agosto 2027."},
+  {d:"2027-01-20", k:"admin", t:"Límite de tarifa Early Registration", n:"Último día para inscribirte con costo reducido."},
+  {d:"2027-05-10", k:"admin", t:"Cierre de inscripción estándar", n:"Último día para registrarte al examen."},
+  {d:REVIEW[0].from, k:"admin", t:"Fin de la fase de contenido nuevo", n:"Desde aquí: semanas de repaso general y simulacros."},
+  {d:REVIEW[1].to, k:"mock",  t:"Mock Exam #1 completo", n:"Cierre de la semana 2 de repaso."},
+  {d:REVIEW[3].to, k:"mock",  t:"Mock Exam #2 completo", n:"Cierre de la semana 4 de repaso."},
+  {d:REVIEW[4].to, k:"mock",  t:"Mock Exam #3 (opcional)", n:"Cierre de la semana 5 de repaso."},
+  {d:EXAM_FROM, k:"examen",t:"Inicia la ventana de examen", n:"Del 17 al 23 de agosto."},
+  {d:EXAM_TO, k:"examen",t:"Último día de la ventana de examen", n:"Cierre del periodo para presentar Level I."}
+];
+
+const FRASES = [
+  "Un módulo hoy vale más que diez planeados para mañana.",
+  "El interés compuesto también aplica al estudio: hoy suma sobre lo de ayer.",
+  "No tienes que sentirte lista. Solo tienes que abrir el libro.",
+  "La disciplina es lo que queda cuando la motivación se agota.",
+  "Nadie aprueba el Level I en un día. Se aprueba en 280 días pequeños.",
+  "Lo difícil de hoy es lo evidente de diciembre.",
+  "Estudia como si el examen fuera mañana; descansa como si faltara un año.",
+  "Un capítulo entendido supera a cinco capítulos leídos.",
+  "El mercado premia la paciencia. Tu curriculum también.",
+  "Empieza por el módulo que estás evitando.",
+  "El plan solo funciona los días que lo ejecutas.",
+  "Avanza primero, perfecciona después.",
+  "Cada casilla marcada es capital invertido en ti.",
+  "No estás atrasada, estás en la parte aburrida. Sigue.",
+  "La constancia no se ve en un día; se ve en la gráfica.",
+  "Hoy solo necesitas ganarle a la versión de ayer.",
+  "El riesgo real es no empezar.",
+  "Las horas raras también cuentan: veinte minutos son veinte minutos.",
+  "Duda del atajo. Confía en la repetición.",
+  "Lee la fórmula, luego úsala. Solo lo segundo se queda.",
+  "Tu yo de agosto 2027 está mirando lo que haces hoy.",
+  "Un mal día de estudio sigue siendo un día de estudio.",
+  "Vuelve al ejercicio que fallaste. Ahí está el aprendizaje.",
+  "Ethics pesa 15–20%. También pesa lo que haces cuando nadie mira.",
+  "Termina el módulo antes de abrir el siguiente.",
+  "El cansancio pasa; el temario avanzado se queda.",
+  "Menos subrayar, más resolver.",
+  "Si no puedes explicarlo en voz alta, todavía no lo sabes.",
+  "El progreso lento sigue siendo progreso.",
+  "Hoy no busques brillar; busca aparecer.",
+  "Los mocks no miden tu valor, miden tu siguiente repaso.",
+  "Se gana en los días normales, no en los heroicos.",
+  "Esto es una maratón con fecha. Dosifica.",
+  "Una duda anotada hoy es un punto ganado en agosto.",
+  "Cierra pestañas. Abre el PDF.",
+  "La calculadora también se practica.",
+  "Prefiere media hora concentrada a tres horas dispersas.",
+  "Lo que repasas dos veces deja de darte miedo.",
+  "El plan es tuyo; también lo es el derecho a ajustarlo.",
+  "Lo perfecto no aprueba exámenes. Lo terminado sí.",
+  "Recuerda por qué empezaste, y abre el capítulo igual.",
+  "Suma un módulo. Mañana el número te lo agradece.",
+  "Aprender es incómodo. La incomodidad es la señal de que funciona.",
+  "Descansar también está en el cronograma. Hazlo sin culpa."
+];
+
+/* ═══════════ utilidades de fecha ═══════════ */
+const MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+const MES3  = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const DOW   = ["lun","mar","mié","jue","vie","sáb","dom"];
+
+function pd(s){ const [y,m,d]=s.split("-").map(Number); return new Date(y,m-1,d); }
+function key(dt){ return dt.getFullYear()+"-"+String(dt.getMonth()+1).padStart(2,"0")+"-"+String(dt.getDate()).padStart(2,"0"); }
+function today(){ const n=new Date(); return new Date(n.getFullYear(),n.getMonth(),n.getDate()); }
+function diffDays(a,b){ return Math.round((b-a)/86400000); }
+function fmtShort(s){ const d=pd(s); return d.getDate()+" "+MES3[d.getMonth()]; }
+function fmtLong(s){ const d=pd(s); return d.getDate()+" "+MES3[d.getMonth()]+" "+d.getFullYear(); }
+function addDays(dt,n){ const c=new Date(dt); c.setDate(c.getDate()+n); return c; }
+
+const TODAY = today();
+const TODAY_K = key(TODAY);
+
+/* ═══════════ estado ═══════════ */
+const STORE = "cfa-l1-ago2027-v2";
+function normalizeState(p){
+  p = p || {};
+  return {done:p.done||{}, sec:p.sec||{}, rev:p.rev||{}, score:p.score||{}, mile:p.mile||{}, hours:p.hours||{}};
+}
+let state = normalizeState({});
+let lastSaved = null;
+let currentUser = null;
+
+function localKey(){ return currentUser ? (STORE+":"+currentUser.uid) : STORE; }
+
+let cloudSaveTimer = null;
+function cloudSaveDebounced(){
+  if(!currentUser) return;
+  clearTimeout(cloudSaveTimer);
+  cloudSaveTimer = setTimeout(()=>{
+    let payload;
+    try{ payload = JSON.parse(JSON.stringify(state)); }catch(e){ return; }
+    setDoc(doc(db, "cfa_progress", currentUser.uid), payload).catch(err=>{
+      console.error("No se pudo guardar en la nube:", err);
+    });
+  }, 700);
+}
+
+function loadStateForUser(user){
+  let cached = null;
+  try{
+    const raw = localStorage.getItem(STORE+":"+user.uid);
+    if(raw) cached = JSON.parse(raw);
+  }catch(e){}
+
+  return getDoc(doc(db, "cfa_progress", user.uid)).then(snap=>{
+    state = normalizeState(snap.exists() ? snap.data() : (cached||{}));
+    lastSaved = (cached && cached._saved) || null;
+    try{ localStorage.setItem(localKey(), JSON.stringify(Object.assign({_saved:lastSaved}, state))); }catch(e){}
+    if(!snap.exists()) cloudSaveDebounced();
+  }).catch(err=>{
+    console.error("No se pudo leer de la nube, usando la copia local:", err);
+    state = normalizeState(cached||{});
+    lastSaved = (cached && cached._saved) || null;
+  });
+}
+
+function fmtStamp(iso){
+  const d=new Date(iso); if(isNaN(d)) return "";
+  const hh=String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");
+  const same = key(new Date(d.getFullYear(),d.getMonth(),d.getDate()))===TODAY_K;
+  return same ? "hoy "+hh : d.getDate()+" "+MES3[d.getMonth()]+" "+hh;
+}
+let flashTimer=null;
+function paintSaved(flash){
+  const el=document.getElementById("saved-when");
+  el.textContent = lastSaved ? "Guardado "+fmtStamp(lastSaved) : "Sin cambios guardados todavía";
+  if(flash){
+    el.classList.add("flash");
+    clearTimeout(flashTimer);
+    flashTimer=setTimeout(()=>el.classList.remove("flash"),1400);
+  }
+}
+function save(){
+  lastSaved = new Date().toISOString();
+  try{
+    localStorage.setItem(localKey(), JSON.stringify(Object.assign({_saved:lastSaved}, state)));
+  }catch(e){}
+  cloudSaveDebounced();
+  paintSaved(true);
+}
+
+document.getElementById("hours-input").addEventListener("change", (e) => {
+  const val = parseFloat(e.target.value);
+  if(isNaN(val) || val <= 0) {
+      delete state.hours[TODAY_K];
+  } else {
+      state.hours[TODAY_K] = val;
+  }
+  save();
+  drawChart(); 
+});
+
+/* ═══════════ índices derivados ═══════════ */
+const ALL_LM = [];     
+const WEEKS  = [];      
+TOPICS.forEach((t,ti)=>{
+  t.weeks.forEach((w,wi)=>{
+    const rec={ti,wi,from:w.from,to:w.to,ids:[]};
+    w.lms.forEach((m,mi)=>{
+      const id="t"+ti+"w"+wi+"m"+mi;
+      ALL_LM.push({id,code:m.code,title:m.title,ti,wi,due:w.to,
+                   secIds:(m.sec||[]).map((s,si)=>id+"s"+si)});
+      rec.ids.push(id);
+    });
+    WEEKS.push(rec);
+  });
+});
+const TOTAL = ALL_LM.length;
+const TOTAL_SEC = ALL_LM.reduce((a,m)=>a+m.secIds.length,0);
+
+function setLM(m, on){
+  if(on){ state.done[m.id]=TODAY_K; m.secIds.forEach(s=>{ if(!state.sec[s]) state.sec[s]=TODAY_K; }); }
+  else  { delete state.done[m.id]; m.secIds.forEach(s=>delete state.sec[s]); }
+}
+function syncLM(m){
+  const n = m.secIds.filter(s=>state.sec[s]).length;
+  if(m.secIds.length && n===m.secIds.length){ if(!state.done[m.id]) state.done[m.id]=TODAY_K; }
+  else delete state.done[m.id];
+}
+
+const GOAL_DAYS = new Map();
+WEEKS.forEach(w=>{
+  if(!GOAL_DAYS.has(w.to)) GOAL_DAYS.set(w.to,[]);
+  GOAL_DAYS.get(w.to).push(w);
+});
+
+const GOLD_DAYS = new Map(), MOCK_DAYS = new Map();
+MILESTONES.forEach((m,i)=>{
+  m.id = "ms"+i;                                  
+  const bag = m.k==="mock" ? MOCK_DAYS : GOLD_DAYS;
+  if(!bag.has(m.d)) bag.set(m.d,[]);
+  bag.get(m.d).push(m);
+});
+const MILE_LABEL = {ok:"✓ cumplido", na:"no aplica"};
+const EXAM_DAYS = new Set();
+for(let d=pd(EXAM_FROM); d<=pd(EXAM_TO); d=addDays(d,1)) EXAM_DAYS.add(key(d));
+
+/* ═══════════ construcción del temario ═══════════ */
+const refs = {topics:[], weeks:[], lms:{}};
+const topicsEl = document.getElementById("topics");
+
+TOPICS.forEach((t,ti)=>{
+  const det=document.createElement("details");
+  det.className="topic";
+  const n = t.weeks.reduce((a,w)=>a+w.lms.length,0);
+  const from = fmtShort(t.weeks[0].from), to = fmtLong(t.weeks[t.weeks.length-1].to);
+
+  const sum=document.createElement("summary");
+  sum.className="topic-head";
+  sum.innerHTML =
+    '<span class="tw">▶</span>'+
+    '<span class="t-main">'+
+      '<span class="t-name"><strong></strong><span class="t-weight mono"></span></span>'+
+      '<span class="t-range mono"></span>'+
+      '<span class="t-rail"><span class="t-fill"></span></span>'+
+    '</span>'+
+    '<span class="t-meta"><span class="t-count mono">0/'+n+'</span><span class="t-pct mono">0%</span></span>';
+  sum.querySelector("strong").textContent = t.name;
+  sum.querySelector(".t-weight").textContent = t.weight;
+  sum.querySelector(".t-range").textContent = from + " → " + to;
+  det.appendChild(sum);
+
+  const body=document.createElement("div");
+  body.className="topic-body";
+
+  const weekRefs=[];
+  t.weeks.forEach((w,wi)=>{
+    const wEl=document.createElement("div");
+    wEl.className="week";
+    const head=document.createElement("div");
+    head.className="week-head";
+    head.innerHTML =
+      '<span class="week-label"></span>'+
+      '<span class="week-dates mono"></span>'+
+      '<button class="week-all" type="button">todo</button>'+
+      '<span class="week-count mono"></span>';
+    head.querySelector(".week-label").textContent = w.label;
+    head.querySelector(".week-dates").textContent = fmtShort(w.from)+" – "+fmtShort(w.to);
+    wEl.appendChild(head);
+
+    const ul=document.createElement("ul");
+    ul.className="lms";
+    const ids=[];
+    w.lms.forEach((m,mi)=>{
+      const id="t"+ti+"w"+wi+"m"+mi;
+      ids.push(id);
+      const rec = ALL_LM.find(x=>x.id===id);
+
+      const li=document.createElement("li");
+      li.className="lm";
+
+      const row=document.createElement("div");
+      row.className="lm-row";
+      const cb=document.createElement("input");
+      cb.type="checkbox"; cb.id="cb_"+id;
+      const lab=document.createElement("label");
+      lab.className="lm-lab"; lab.htmlFor=cb.id;
+      const code=document.createElement("span"); code.className="lm-code"; code.textContent=m.code;
+      const ttl=document.createElement("span"); ttl.className="lm-title"; ttl.textContent=m.title;
+      lab.append(code,ttl);
+      const when=document.createElement("span"); when.className="lm-when mono";
+      const frac=document.createElement("span"); frac.className="lm-frac";
+      const exp=document.createElement("button");
+      exp.type="button"; exp.className="lm-exp"; exp.textContent="▼";
+      exp.setAttribute("aria-expanded","false");
+      exp.title="Ver las secciones del módulo";
+      row.append(cb,lab,when,frac,exp);
+      li.appendChild(row);
+
+      const sul=document.createElement("ul");
+      sul.className="secs"; sul.hidden=true;
+      const secRefs=[];
+      (m.sec||[]).forEach((s,si)=>{
+        const sid=id+"s"+si;
+        const sli=document.createElement("li"); sli.className="sec";
+        const slab=document.createElement("label");
+        const scb=document.createElement("input"); scb.type="checkbox";
+        const stx=document.createElement("span"); stx.className="sec-t"; stx.textContent=s;
+        slab.append(scb,stx); sli.appendChild(slab); sul.appendChild(sli);
+        secRefs.push({sid,li:sli,cb:scb});
+        scb.addEventListener("change",()=>{
+          if(scb.checked) state.sec[sid]=TODAY_K; else delete state.sec[sid];
+          syncLM(rec); save(); refresh();
+        });
+      });
+      li.appendChild(sul);
+      ul.appendChild(li);
+
+      exp.addEventListener("click",()=>{
+        const open = sul.hidden;
+        sul.hidden = !open;
+        exp.setAttribute("aria-expanded", open?"true":"false");
+      });
+      cb.addEventListener("change",()=>{ setLM(rec, cb.checked); save(); refresh(); });
+
+      refs.lms[id]={li,cb,when,frac,rec,secRefs};
+    });
+    wEl.appendChild(ul);
+
+    head.querySelector(".week-all").addEventListener("click",()=>{
+      const allOn = ids.every(i=>state.done[i]);
+      ids.forEach(i=>setLM(ALL_LM.find(x=>x.id===i), !allOn));
+      save(); refresh();
+    });
+
+    body.appendChild(wEl);
+    weekRefs.push({el:wEl, count:head.querySelector(".week-count"), ids});
+  });
+
+  det.appendChild(body);
+  topicsEl.appendChild(det);
+  refs.topics.push({
+    det, weeks:weekRefs,
+    fill:sum.querySelector(".t-fill"),
+    count:sum.querySelector(".t-count"),
+    pct:sum.querySelector(".t-pct"),
+    n
+  });
+});
+
+/* ═══════════ repaso final ═══════════ */
+const revEl=document.getElementById("rev");
+const revRefs=[];
+let REV_TOTAL=0;
+
+REVIEW.forEach((r,wi)=>{
+  const blk=document.createElement("div");
+  blk.className="rv";
+  const head=document.createElement("div");
+  head.className="rv-head";
+  head.innerHTML='<span class="rv-w"></span><span class="rv-d mono"></span><span class="rv-n mono"></span>';
+  head.querySelector(".rv-w").textContent=r.w;
+  head.querySelector(".rv-d").textContent=r.d+" 2027";
+  blk.appendChild(head);
+
+  const ul=document.createElement("ul");
+  ul.className="rv-list";
+  const items=[];
+  r.tasks.forEach((raw,ti)=>{
+    const task = typeof raw==="string" ? {t:raw} : raw;
+    const id="rw"+wi+"t"+ti;
+    REV_TOTAL++;
+    const li=document.createElement("li"); li.className="rv-i";
+    const lab=document.createElement("label");
+    const cb=document.createElement("input"); cb.type="checkbox";
+    const tx=document.createElement("span"); tx.className="rv-t"; tx.textContent=task.t;
+    lab.append(cb,tx); li.appendChild(lab); ul.appendChild(li);
+    cb.addEventListener("change",()=>{
+      if(cb.checked) state.rev[id]=TODAY_K; else delete state.rev[id];
+      save(); refreshRev();
+    });
+
+    let score=null;
+    if(task.mock){
+      const sc=document.createElement("div"); sc.className="rv-score";
+      const lb=document.createElement("span"); lb.textContent="Puntaje";
+      score=document.createElement("input");
+      score.type="number"; score.min="0"; score.max="100"; score.step="1";
+      score.placeholder="—"; score.setAttribute("aria-label","Puntaje del Mock #"+task.mock);
+      const pc=document.createElement("em"); pc.textContent="%";
+      sc.append(lb,score,pc);
+      ul.appendChild(sc);
+      score.addEventListener("input",()=>{
+        const v=score.value.trim();
+        if(v==="") delete state.score[id];
+        else state.score[id]=Math.max(0,Math.min(100,Number(v)));
+        score.classList.toggle("has", v!=="");
+        save();
+      });
+    }
+    items.push({id,li,cb,score});
+  });
+  blk.appendChild(ul);
+  revEl.appendChild(blk);
+  revRefs.push({blk, n:head.querySelector(".rv-n"), items});
+});
+
+function refreshRev(){
+  let done=0;
+  revRefs.forEach(g=>{
+    let n=0;
+    g.items.forEach(it=>{
+      const on=!!state.rev[it.id];
+      it.cb.checked=on; it.li.classList.toggle("on",on);
+      if(on){ n++; done++; }
+      if(it.score){
+        const v=state.score[it.id];
+        it.score.value = (v===undefined||v===null) ? "" : v;
+        it.score.classList.toggle("has", v!==undefined && v!==null);
+      }
+    });
+    g.n.textContent=n+"/"+g.items.length;
+    g.blk.classList.toggle("done", n===g.items.length);
+  });
+  document.getElementById("rev-note").textContent = done+" / "+REV_TOTAL;
+  document.getElementById("rev-fill").style.width = (REV_TOTAL? done/REV_TOTAL*100 : 0)+"%";
+}
+
+/* ═══════════ almanaque ═══════════ */
+const dowEl=document.getElementById("cal-dow");
+DOW.forEach(d=>{ const s=document.createElement("div"); s.className="cal-dow"; s.textContent=d; dowEl.appendChild(s); });
+
+const RANGE_MIN = new Date(2026,7,1), RANGE_MAX = new Date(2027,8,1);
+let curMonth = new Date(TODAY.getFullYear(), TODAY.getMonth(), 1);
+if(curMonth<RANGE_MIN) curMonth=new Date(RANGE_MIN);
+if(curMonth>RANGE_MAX) curMonth=new Date(RANGE_MAX);
+
+function weekDone(w){ return w.ids.every(i=>state.done[i]); }
+
+function drawCalendar(){
+  const grid=document.getElementById("cal-grid");
+  grid.innerHTML="";
+  document.getElementById("cal-month").textContent = MESES[curMonth.getMonth()]+" "+curMonth.getFullYear();
+  document.getElementById("cal-prev").disabled = curMonth<=RANGE_MIN;
+  document.getElementById("cal-next").disabled = curMonth>=RANGE_MAX;
+
+  const first=new Date(curMonth.getFullYear(),curMonth.getMonth(),1);
+  const lead=(first.getDay()+6)%7;              
+  const start=addDays(first,-lead);
+  const nDays=new Date(curMonth.getFullYear(),curMonth.getMonth()+1,0).getDate();
+  const cells=Math.ceil((lead+nDays)/7)*7;      
+
+  for(let i=0;i<cells;i++){
+    const d=addDays(start,i);
+    const k=key(d);
+    const cell=document.createElement("div");
+    cell.className="cal-d";
+    if(d.getMonth()!==curMonth.getMonth()) cell.classList.add("is-out");
+
+    const notes=[];
+    const goals=GOAL_DAYS.get(k), golds=GOLD_DAYS.get(k), mocks=MOCK_DAYS.get(k);
+
+    if(EXAM_DAYS.has(k)){
+      cell.classList.add("is-exam");
+      notes.push("Ventana de examen Level I");
+    }else if(golds){
+      cell.classList.add("is-gold");
+    }else if(goals){
+      const allDone = goals.every(weekDone);
+      if(allDone) cell.classList.add("is-goal-done");
+      else if(d < TODAY) cell.classList.add("is-goal-late");
+      else cell.classList.add("is-goal");
+    }
+    const mile=[...(golds||[]),...(mocks||[])];
+    mile.forEach(m=>{
+      const st=state.mile[m.id];
+      notes.push(m.t+(st?" ["+MILE_LABEL[st]+"]":"")+" — "+m.n);
+    });
+    if(mile.length && mile.every(m=>state.mile[m.id])) cell.classList.add("is-resolved");
+    if(goals) goals.forEach(w=>{
+      const t=TOPICS[w.ti], wk=t.weeks[w.wi];
+      const n=w.ids.filter(i=>state.done[i]).length;
+      notes.push("Meta: "+t.name+" · "+wk.label+" ("+n+"/"+w.ids.length+" módulos)");
+    });
+    if(k===TODAY_K){ cell.classList.add("is-today"); notes.unshift("Hoy"); }
+
+    const num=document.createElement("span");
+    num.textContent=d.getDate();
+    cell.appendChild(num);
+
+    const marks=document.createElement("span");
+    marks.className="cal-marks";
+    if(goals && (golds||EXAM_DAYS.has(k))){ const s=document.createElement("i"); s.className="cal-dot g"; marks.appendChild(s); }
+    if(mocks){ const s=document.createElement("i"); s.className="cal-dot m"; marks.appendChild(s); }
+    cell.appendChild(marks);
+
+    if(notes.length) cell.title=notes.join("\n");
+    grid.appendChild(cell);
+  }
+}
+document.getElementById("cal-prev").addEventListener("click",()=>{ curMonth=new Date(curMonth.getFullYear(),curMonth.getMonth()-1,1); drawCalendar(); });
+document.getElementById("cal-next").addEventListener("click",()=>{ curMonth=new Date(curMonth.getFullYear(),curMonth.getMonth()+1,1); drawCalendar(); });
+document.getElementById("cal-today").addEventListener("click",()=>{
+  curMonth=new Date(TODAY.getFullYear(),TODAY.getMonth(),1);
+  if(curMonth<RANGE_MIN) curMonth=new Date(RANGE_MIN);
+  if(curMonth>RANGE_MAX) curMonth=new Date(RANGE_MAX);
+  drawCalendar();
+});
+
+
+/* ═══════════ tabla de fechas ═══════════ */
+function severity(days){
+  if(days<0)  return {c:"var(--ink-faint)", txt:"pasó"};
+  if(days===0)return {c:"var(--red)",   txt:"hoy"};
+  if(days<=14)return {c:"var(--red)",   txt:days+" d"};
+  if(days<=30)return {c:"#D4562B",      txt:days+" d"};
+  if(days<=60)return {c:"var(--amber)", txt:days+" d"};
+  if(days<=120)return{c:"var(--accent)",txt:days+" d"};
+  return {c:"var(--line)", txt:days+" d"};
+}
+const KIND_LABEL={admin:"Trámite CFA", mock:"Simulacro", meta:"Fin de tema", examen:"Examen", gold:"Prioridad"};
+
+function drawDates(){
+  const rows=[];
+  MILESTONES.forEach((m,i)=>rows.push({id:"ms"+i, d:m.d, k:m.k, t:m.t, n:m.n}));
+  TOPICS.forEach((t,ti)=>{
+    const last=t.weeks[t.weeks.length-1];
+    const ids=[]; t.weeks.forEach((w,wi)=>w.lms.forEach((m,mi)=>ids.push("t"+ti+"w"+wi+"m"+mi)));
+    const n=ids.filter(i=>state.done[i]).length;
+    rows.push({d:last.to, k:"meta", t:"Terminar "+t.name, n:"",
+               prog:n+"/"+ids.length, complete:n===ids.length});
+  });
+  rows.sort((a,b)=>a.d<b.d?-1:a.d>b.d?1:0);
+
+  const tb=document.getElementById("dates-body");
+  tb.innerHTML="";
+  rows.forEach(r=>{
+    const days=diffDays(TODAY,pd(r.d));
+    const sev=severity(days);
+    const st = r.id ? state.mile[r.id] : null;      
+    const ok = st==="ok" || r.complete;
+    const na = st==="na";
+
+    const tr=document.createElement("tr");
+    tr.className="dr"+((days<0||ok)?" past":"")+(na?" na":"");
+    tr.style.setProperty("--sev", ok?"var(--green)":(na?"var(--line)":sev.c));
+
+    const td1=document.createElement("td");
+    td1.className="d-date";
+    td1.innerHTML=fmtShort(r.d)+"<br><span style='color:var(--ink-faint)'>"+pd(r.d).getFullYear()+"</span>";
+
+    const td2=document.createElement("td");
+    td2.className="d-what";
+    td2.textContent=r.t;
+    const kind=document.createElement("span");
+    kind.className="d-kind "+r.k;
+    kind.textContent = KIND_LABEL[r.k] + (r.prog? " · "+r.prog : "");
+    td2.appendChild(document.createElement("br"));
+    td2.appendChild(kind);
+    if(r.n) td2.title=r.n;
+
+    const td3=document.createElement("td");
+    td3.className="d-in";
+    const when=document.createElement("span");
+    when.className="d-when";
+    when.style.color = ok?"var(--green)":(na?"var(--ink-faint)":sev.c);
+    when.textContent = ok ? "hecho ✓" : (na ? "no aplica" : sev.txt);
+    td3.appendChild(when);
+
+    if(r.id){                                       
+      const acts=document.createElement("span");
+      acts.className="d-acts";
+      const bOk=document.createElement("button");
+      bOk.type="button"; bOk.className="d-b"+(st==="ok"?" on-ok":""); bOk.textContent="✓";
+      bOk.title="Marcar como cumplido";
+      const bNa=document.createElement("button");
+      bNa.type="button"; bNa.className="d-b"+(na?" on-na":""); bNa.textContent="n/a";
+      bNa.title="No aplica en mi caso";
+      bOk.addEventListener("click",()=>{
+        if(state.mile[r.id]==="ok") delete state.mile[r.id]; else state.mile[r.id]="ok";
+        save(); drawDates(); drawCalendar();
+      });
+      bNa.addEventListener("click",()=>{
+        if(state.mile[r.id]==="na") delete state.mile[r.id]; else state.mile[r.id]="na";
+        save(); drawDates(); drawCalendar();
+      });
+      acts.append(bOk,bNa);
+      td3.appendChild(acts);
+    }
+
+    tr.append(td1,td2,td3);
+    tb.appendChild(tr);
+  });
+}
+
+/* ═══════════ frase del día ═══════════ */
+function drawQuote(){
+  const idx = Math.floor(TODAY.getTime()/86400000) % FRASES.length;
+  document.getElementById("quote-txt").textContent = "«" + FRASES[idx] + "»";
+  const dn = DOW[(TODAY.getDay()+6)%7];
+  const full = {lun:"Lunes",mar:"Martes","mié":"Miércoles",jue:"Jueves",vie:"Viernes","sáb":"Sábado",dom:"Domingo"}[dn];
+  document.getElementById("quote-day").textContent = full+" "+TODAY.getDate()+" de "+MESES[TODAY.getMonth()]+" de "+TODAY.getFullYear();
+}
+
+/* ═══════════ gráficos diarios y horas ═══════════ */
+function streak(){
+  const days=new Set([...Object.values(state.done), ...Object.values(state.sec)]);
+  let n=0, d=new Date(TODAY);
+  if(!days.has(key(d))) d=addDays(d,-1);            
+  while(days.has(key(d))){ n++; d=addDays(d,-1); }
+  return n;
+}
+
+function drawPace(done){
+  const expected = ALL_LM.filter(m=>pd(m.due) < TODAY).length;
+  const el=document.getElementById("pace"), tag=document.getElementById("pace-tag"), txt=document.getElementById("pace-txt");
+  el.classList.remove("ok","warn","late");
+  const gap = done - expected;
+  if(expected===0){
+    el.classList.add("ok"); tag.textContent="Arranque";
+    txt.textContent = "Todavía no vence ningún bloque del cronograma. Llevas "+done+" de "+TOTAL+".";
+  }else if(gap>=0){
+    el.classList.add("ok"); tag.textContent="Al día";
+    txt.textContent = gap===0 ? "Vas exactamente al ritmo del plan ("+expected+" módulos vencidos, "+done+" hechos)."
+                              : "Vas "+gap+" módulo"+(gap===1?"":"s")+" por delante del cronograma.";
+  }else if(gap>=-5){
+    el.classList.add("warn"); tag.textContent="Ajustable";
+    txt.textContent = "Te faltan "+(-gap)+" módulo"+(gap===-1?"":"s")+" para estar al día. Recuperable esta semana.";
+  }else{
+    el.classList.add("late"); tag.textContent="Atrasada";
+    txt.textContent = "Te faltan "+(-gap)+" módulos para alcanzar el cronograma. Prioriza los bloques vencidos.";
+  }
+}
+
+function drawChart(){
+  const counts={};
+  Object.values(state.done).forEach(d=>{ counts[d]=(counts[d]||0)+1; });
+  const days=[];
+  for(let i=13;i>=0;i--){ 
+      const d=addDays(TODAY,-i); 
+      const k=key(d);
+      days.push({d, k, v:counts[k]||0, h:state.hours[k]||0}); 
+  }
+  
+  // 1. CHART DE BARRAS (MÓDULOS)
+  const vals=days.map(x=>x.v);
+  const max=Math.max(3,...vals);
+  const best=Math.max(...vals);
+  const sum=vals.reduce((a,b)=>a+b,0);
+
+  const chart=document.getElementById("chart"), xs=document.getElementById("chart-x");
+  chart.innerHTML=""; xs.innerHTML="";
+  days.forEach(x=>{
+    const col=document.createElement("div"); col.className="bar-col";
+    const v=document.createElement("span"); v.className="bar-v"; v.textContent = x.v>0 ? x.v : "";
+    const bar=document.createElement("div");
+    bar.className="bar"+(x.v===0?" zero":"")+(x.k===TODAY_K?" today":(x.v>0 && x.v===best && best>0?" best":""));
+    bar.style.height = x.v===0 ? "2px" : Math.max(6,(x.v/max)*104)+"px";
+    bar.title = fmtLong(x.k)+": "+x.v+" módulo"+(x.v===1?"":"s");
+    col.append(v,bar);
+    chart.appendChild(col);
+    const lab=document.createElement("span");
+    lab.className="x-lab"+(x.k===TODAY_K?" today":"");
+    lab.textContent=x.d.getDate();
+    xs.appendChild(lab);
+  });
+
+  const secToday = Object.values(state.sec).filter(d=>d===TODAY_K).length;
+  document.getElementById("c-today").textContent = counts[TODAY_K]||0;
+  document.getElementById("c-sec").textContent = secToday;
+  document.getElementById("c-avg").textContent = (sum/14).toFixed(1);
+  document.getElementById("c-best").textContent = best;
+  
+  // 2. CHART DE LÍNEAS SVG (HORAS DE ESTUDIO)
+  const chartH = document.getElementById("hours-chart");
+  const xsH = document.getElementById("hours-chart-x");
+  chartH.innerHTML = ""; xsH.innerHTML = "";
+  
+  const hMax = Math.max(4, ...days.map(x=>x.h));
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("viewBox", "0 0 130 65");
+  svg.setAttribute("preserveAspectRatio", "none");
+  svg.style.width = "100%"; svg.style.height = "100%"; svg.style.overflow = "visible";
+  
+  const pts = days.map((x, i) => `${i * 10},${65 - (x.h / hMax) * 60}`).join(" ");
+  const polyline = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+  polyline.setAttribute("points", pts);
+  polyline.setAttribute("fill", "none");
+  polyline.setAttribute("stroke", "var(--accent-ink)");
+  polyline.setAttribute("stroke-width", "2");
+  svg.appendChild(polyline);
+  
+  days.forEach((x, i) => {
+    const cx = i * 10;
+    const cy = 65 - (x.h / hMax) * 60;
+    const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    circle.setAttribute("cx", cx); circle.setAttribute("cy", cy); circle.setAttribute("r", "1.2");
+    circle.setAttribute("fill", "var(--card-2)");
+    circle.setAttribute("stroke", x.k === TODAY_K ? "var(--gold)" : "var(--accent-ink)");
+    circle.setAttribute("stroke-width", "1.2");
+    
+    const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
+    title.textContent = `${x.h} horas estudiadas`;
+    circle.appendChild(title);
+    svg.appendChild(circle);
+    
+    const lab = document.createElement("span");
+    lab.className = "x-lab" + (x.k === TODAY_K ? " today" : "");
+    lab.textContent = x.d.getDate();
+    xsH.appendChild(lab);
+  });
+  chartH.appendChild(svg);
+  
+  const hSum = days.reduce((a,b)=>a+b.h, 0);
+  const hBest = Math.max(...days.map(x=>x.h));
+  document.getElementById("h-total").textContent = hSum;
+  document.getElementById("h-avg").textContent = (hSum/14).toFixed(1);
+  document.getElementById("h-best").textContent = hBest;
+  
+  const hInput = document.getElementById("hours-input");
+  if(document.activeElement !== hInput) {
+      hInput.value = state.hours[TODAY_K] || "";
+  }
+}
+
+/* ═══════════ refresco global ═══════════ */
+function refresh(){
+  let done=0, secDone=0;
+  ALL_LM.forEach(m=>{
+    const on=!!state.done[m.id];
+    const r=refs.lms[m.id];
+    let n=0;
+    r.secRefs.forEach(s=>{
+      const sOn=!!state.sec[s.sid];
+      s.cb.checked=sOn; s.li.classList.toggle("on",sOn);
+      if(sOn){ n++; secDone++; }
+    });
+    r.cb.checked=on;
+    r.cb.indeterminate = !on && n>0;
+    r.li.classList.toggle("on",on);
+    r.when.textContent = on ? fmtShort(state.done[m.id]) : "";
+    r.frac.textContent = m.secIds.length ? n+"/"+m.secIds.length : "";
+    r.frac.classList.toggle("part", !on && n>0);
+    if(on) done++;
+  });
+
+  refs.topics.forEach((t,ti)=>{
+    let n=0;
+    t.weeks.forEach(w=>{
+      const c=w.ids.filter(i=>state.done[i]).length;
+      n+=c;
+      w.count.textContent=c+"/"+w.ids.length;
+      w.el.classList.toggle("done", c===w.ids.length);
+    });
+    const p = t.n ? n/t.n*100 : 0;
+    t.fill.style.width=p+"%";
+    t.count.textContent=n+"/"+t.n;
+    t.pct.textContent=Math.round(p)+"%";
+    t.det.classList.toggle("done", n===t.n);
+  });
+
+  const pct = TOTAL ? done/TOTAL*100 : 0;
+  const fill=document.getElementById("m-fill");
+  fill.style.width=pct+"%";
+  fill.classList.toggle("full", done===TOTAL);
+  document.getElementById("m-pct").textContent = pct.toFixed(1)+"%";
+  document.getElementById("m-note").textContent = done===TOTAL
+    ? "¡Temario completo! "+TOTAL+" de "+TOTAL+" Learning Modules. Ahora toca repaso y mocks."
+    : done+" de "+TOTAL+" Learning Modules · faltan "+(TOTAL-done)
+      +"  ·  "+secDone+" de "+TOTAL_SEC+" secciones";
+  document.getElementById("s-done").textContent = done;
+  document.getElementById("s-streak").textContent = streak();
+  document.getElementById("topics-note").textContent = done+" / "+TOTAL;
+
+  const dLeft = diffDays(TODAY, pd(EXAM_FROM));
+  document.getElementById("s-days").textContent = dLeft>0 ? dLeft : (dLeft===0 ? "hoy" : "—");
+
+  drawPace(done);
+  drawCalendar();
+  drawChart();
+  drawDates();
+}
+
+/* ═══════════ respaldo, restauración y reinicio ═══════════ */
+function showMsg(text, kind, actionLabel, actionFn){
+  const el=document.getElementById("data-msg");
+  el.textContent=text;
+  el.className="data-msg"+(kind?" "+kind:"");
+  if(actionLabel){
+    const b=document.createElement("button");
+    b.type="button"; b.className="msg-link"; b.textContent=actionLabel;
+    b.addEventListener("click",actionFn);
+    el.append(" ",b);
+  }
+  el.hidden=false;
+}
+function countMarks(s){
+  return Object.keys(s.done||{}).length+" módulos, "
+       + Object.keys(s.sec||{}).length+" secciones y "
+       + Object.keys(s.rev||{}).length+" tareas de repaso";
+}
+function backupText(){
+  return JSON.stringify({app:"cfa-l1-ago2027", v:2, saved:new Date().toISOString(), state}, null, 1);
+}
+function manualFallback(text){
+  const ta=document.getElementById("data-ta");
+  ta.value=text; ta.hidden=false; ta.focus(); ta.select();
+  showMsg("No se pudo descargar el archivo aquí. Copia todo este texto y guárdalo como «cfa-progreso.json» — sirve igual para restaurar.","");
+}
+
+function browserDownload(text, filename){
+  const url = URL.createObjectURL(new Blob([text], {type:"application/json"}));
+  const a = document.createElement("a");
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url), 2000);
+}
+
+document.getElementById("dl").addEventListener("click", async ()=>{
+  const text = backupText();
+  const filename = "cfa-progreso-"+TODAY_K+".json";
+  const ta = document.getElementById("data-ta");
+
+  if(window.claude && window.claude.downloads){
+    try{
+      await window.claude.downloads.save({filename, data:text});
+      ta.hidden=true;
+      showMsg("Respaldo guardado como "+filename+" — contiene "+countMarks(state)+".","ok");
+    }catch(err){
+      const code = err && err.code;
+      if(code==="declined"){
+        showMsg("Cancelaste la descarga. Tu progreso sigue guardado en este navegador.","");
+      }else if(code==="rate_limited"){
+        showMsg("Hay otra descarga esperando respuesta. Termina esa e inténtalo de nuevo.","");
+      }else{
+        manualFallback(text);
+      }
+    }
+    return;
+  }
+
+  try{
+    browserDownload(text, filename);
+    ta.hidden=true;
+    showMsg("Descargando "+filename+" — contiene "+countMarks(state)+". Si tu navegador la bloqueó,",
+            "ok", "muestra el texto para copiarlo", ()=>manualFallback(text));
+  }catch(err){
+    manualFallback(text);
+  }
+});
+
+document.getElementById("up").addEventListener("change", ev=>{
+  const file = ev.target.files && ev.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onerror = ()=>{ showMsg("No se pudo leer ese archivo.","bad"); ev.target.value=""; };
+  reader.onload = ()=>{
+    try{
+      const parsed = JSON.parse(reader.result);
+      const s = (parsed && parsed.state) ? parsed.state : parsed;
+      if(!s || typeof s!=="object" || Array.isArray(s) || (!s.done && !s.sec && !s.rev)){
+        throw new Error("formato");
+      }
+      const incoming = {done:s.done||{}, sec:s.sec||{}, rev:s.rev||{}, score:s.score||{}, mile:s.mile||{}, hours:s.hours||{}};
+      const hasNow = Object.keys(state.done).length + Object.keys(state.sec).length + Object.keys(state.rev).length;
+      if(hasNow && !confirm("Esto reemplaza lo que tienes marcado ahora por el contenido del respaldo. ¿Continuar?")){
+        ev.target.value=""; return;
+      }
+      state = incoming;
+      save(); refresh(); refreshRev();
+      document.getElementById("data-ta").hidden=true;
+      showMsg("Respaldo restaurado: "+countMarks(state)+".","ok");
+    }catch(err){
+      showMsg("Ese archivo no es un respaldo de este plan. Busca el que empieza con «cfa-progreso».","bad");
+    }
+    ev.target.value="";
+  };
+  reader.readAsText(file);
+});
+
+document.getElementById("reset").addEventListener("click",()=>{
+  if(confirm("¿Borrar todo el avance marcado? Esta acción no se puede deshacer.\n\nSi quieres conservarlo, cancela y descarga un respaldo primero.")){
+    state={done:{},sec:{},rev:{},score:{},mile:{},hours:{}};
+    save(); refresh(); refreshRev();
+    showMsg("Progreso reiniciado.","");
+  }
+});
+
+/* ═══════════ arranque (partes que no dependen de la sesión) ═══════════ */
+document.getElementById("mast-sub").textContent =
+  "Sol Paloma Avellaneda Sánchez · 10 temas · "+TOTAL+" Learning Modules · "+TOTAL_SEC+
+  " secciones · títulos tomados del índice de los volúmenes";
+drawQuote();
+const openIdx = TOPICS.findIndex(t=>pd(t.weeks[t.weeks.length-1].to) >= TODAY);
+refs.topics[openIdx>=0?openIdx:0].det.open = true;
+
+/* ═══════════ inicio de sesión ═══════════ */
+const authScreen = document.getElementById("authScreen");
+const pageEl = document.getElementById("page");
+const authForm = document.getElementById("authForm");
+const authEmail = document.getElementById("authEmail");
+const authPassword = document.getElementById("authPassword");
+const authError = document.getElementById("authError");
+const authSubmitBtn = document.getElementById("authSubmitBtn");
+const authSwitchBtn = document.getElementById("authSwitchBtn");
+const authSwitchText = document.getElementById("authSwitchText");
+const authForgot = document.getElementById("authForgot");
+
+let authMode = "signin";
+function setAuthMode(mode){
+  authMode = mode;
+  authSubmitBtn.textContent = mode==="signin" ? "Entrar" : "Crear cuenta";
+  authSwitchText.textContent = mode==="signin" ? "¿No tienes cuenta?" : "¿Ya tienes cuenta?";
+  authSwitchBtn.textContent = mode==="signin" ? "Crear una" : "Inicia sesión";
+  authError.hidden = true;
+}
+authSwitchBtn.addEventListener("click", ()=> setAuthMode(authMode==="signin" ? "signup" : "signin"));
+
+function authErrorMessage(err){
+  const map = {
+    "auth/invalid-email": "Ese correo no es válido.",
+    "auth/user-not-found": "No hay cuenta con ese correo.",
+    "auth/wrong-password": "Contraseña incorrecta.",
+    "auth/invalid-credential": "Correo o contraseña incorrectos.",
+    "auth/email-already-in-use": "Ya existe una cuenta con ese correo.",
+    "auth/weak-password": "La contraseña debe tener al menos 6 caracteres.",
+    "auth/too-many-requests": "Demasiados intentos. Espera un momento e inténtalo de nuevo."
+  };
+  return map[err && err.code] || "No se pudo completar la acción. Inténtalo de nuevo.";
+}
+
+authForm.addEventListener("submit", (e)=>{
+  e.preventDefault();
+  authError.hidden = true;
+  const email = authEmail.value.trim();
+  const pass = authPassword.value;
+  authSubmitBtn.disabled = true;
+  const action = authMode==="signin"
+    ? signInWithEmailAndPassword(auth, email, pass)
+    : createUserWithEmailAndPassword(auth, email, pass);
+  action.catch(err=>{
+    authError.textContent = authErrorMessage(err);
+    authError.hidden = false;
+  }).finally(()=>{ authSubmitBtn.disabled = false; });
+});
+
+authForgot.addEventListener("click", (e)=>{
+  e.preventDefault();
+  const email = authEmail.value.trim();
+  if(!email){
+    authError.textContent = "Escribe tu correo arriba y vuelve a hacer clic.";
+    authError.hidden = false;
+    return;
+  }
+  sendPasswordResetEmail(auth, email).then(()=>{
+    authError.textContent = "Te enviamos un correo para restablecer tu contraseña.";
+    authError.hidden = false;
+  }).catch(err=>{
+    authError.textContent = authErrorMessage(err);
+    authError.hidden = false;
+  });
+});
+
+document.getElementById("logoutBtn").addEventListener("click", ()=>{ signOut(auth); });
+
+onAuthStateChanged(auth, (user)=>{
+  if(user){
+    currentUser = user;
+    authScreen.style.display = "none";
+    loadStateForUser(user).then(()=>{
+      document.getElementById("account-email").textContent = user.email || "";
+      pageEl.style.display = "flex";
+      refresh();
+      refreshRev();
+      paintSaved(false);
+    });
+  }else{
+    currentUser = null;
+    pageEl.style.display = "none";
+    authScreen.style.display = "flex";
+    authForm.reset();
+  }
+});
+</script>
+</body>
+</html>
